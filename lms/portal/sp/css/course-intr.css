@@ -1,0 +1,280 @@
+.m-moclist .g-mn1 .course-top{
+  width:100%;
+ /*  border:1px solid red; */
+}
+.m-moclist .g-mn1 .course-top:after{
+   clear:both;
+   content:"";
+   display:block;
+}
+.m-moclist .g-mn1 .no-common{
+    float:left;
+}
+.m-moclist .g-mn1 .course-simple{
+    margin-left:20px;
+	width:710px;
+	height:203px;
+	background:#fff;
+	position:relative;
+}
+.m-moclist .g-mn1  .sub-simple{
+    font-size:20px;
+	line-height:40px;
+	text-indent:1em;
+/*	font-weight:bold;*/
+}
+.g-mn1 .course-simple .sub-con{
+        padding:5px;
+	line-height:20px;
+	text-indent:2em;
+	margin:0 5px 5px 5px;
+	/*max-height:85px;*/ 
+	overflow:hidden;
+}
+.m-moclist .u-intro{
+     padding:0 15px 0 25px;
+	  right:0;
+     bottom:25px;
+}
+
+.m-moclist  .u-content{
+   width:100%;
+   height:auto;
+   background:#fff;
+  /*  border:1px solid red; */
+}
+.m-moclist .g-mn1 .u-course-title{
+    /* line-height:40px; */
+	border-bottom:1px solid #DDDDDD;
+}
+.u-course-title:after{
+   display:block;
+   clear:both;
+   content:"";
+}
+.m-moclist .g-mn1 .u-title-next{
+    line-height:50px;
+	display:block;
+    float:left;
+	text-indent:0.5em;
+}
+.m-moclist .g-mn1 .u-content .u-statues{
+    float:right;
+   font-size:13px;
+   font-weight:normal;
+     /* line-height:40px; */
+   margin-right:120px;
+   margin-top:4px; 
+   height:100%;
+	padding:0;
+}
+.m-moclist .g-mn1 .u-content .u-statues li{
+    float:left;
+	padding:0;
+	text-indent:0em;
+	margin-right:10px;
+	
+}
+.m-moclist .g-mn1 .u-content .finishe-statues{
+   width:20px;
+   height:20px;
+   display:block;
+   float:left;
+   margin-right:5px;
+}
+.m-moclist .g-mn1 .u-content .u-statues li span{
+  margin-top:9px;
+   margin-left:3px; 
+}
+.u-content .finishe-statues{
+   background:url("../images/course-intro.png") no-repeat;
+}
+.m-moclist .g-mn1 .u-content .no-finish{
+   background-position:-2px -4px;
+}
+.m-moclist .g-mn1 .u-content  .continue{
+   background-position:-38px -4px;
+}
+.m-moclist .g-mn1 .u-content  .finished{
+   background-position:-71px -4px;
+}
+/* .u-content .add-fini{
+    background-position:-71px -5px;
+} */
+.m-moclist .g-mn1 .u-content .u-content-bottom{
+   width:100%;
+   height:auto;
+}
+.m-moclist .u-content .u-course-time{
+   width:100%;
+   height:100%;
+    padding:4px 0; 
+   margin:0;
+}
+.u-course-time:after{
+   clear:both;
+   content:"";
+   display:block;
+}
+.m-moclist .u-content .u-course-time li{
+   float:left;
+}
+.m-moclist .u-content .u-course-time li a{
+     color:#483831;
+}
+.u-course-time .title-time,.u-course-time .lab-time {
+   color:#999999;
+}
+.f-13{
+  font-size:13px;
+}
+.f-13 li{
+    margin-left:10px;
+}
+.u-course-time .p-514{
+    padding:6px 14px;
+    
+}
+.u-course-time .title-time{
+     width:55px;
+     text-overflow:hidden;
+}
+.u-course-time .title-name{
+  width:300px;
+  padding:5px 0;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  margin-right:50px;
+}
+.u-course-time .title-name a:hover{
+     color:#13a654;                                                                                                                                                                                                                                                                                                                                          
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+ .u-course-time  .lab-time{
+   padding:5px 20px 5px 20px;
+   margin-left:30px;
+} 
+.lab-time .video{
+   background-position:-96px -4px;
+}
+.u-course-time .lab-write{
+  padding:5px 0px; 
+  margin:0;
+  margin-left:10px;
+  width: 28%;
+/*   border:1px solid red;*/
+}
+.lab-write ul{
+  padding:0;
+  margin:0;
+}
+.lab-write .u-course-write{
+    margin:0;
+    padding:0;
+/*    border:1px solid green;*/
+}
+
+
+.lab-write .u-course-write:after{
+     display:block;
+     clear:both;
+     content:"";
+    
+}
+.lab-write .u-course-write li{
+    margin:0;
+    margin-right:10px;
+   float:left;
+  padding:0 3px;
+}
+.lab-write .u-course-write .course-teacher{
+      overflow:hidden;
+      max-width:50px;
+        text-overflow:ellipsis;
+}
+
+/*课程分类*/
+.g-doc{
+  width:960px;
+}
+.b-h20{
+  height:20px;
+  width:100%;
+}
+.m-top{
+  padding:20px;
+  min-height:240px;
+}
+.f-bg{
+  background:#fff;
+  -webkit-box-shadow:0px 1px 3px rgba(0,0,0,0.1);
+  -moz-box-shadow:0px 1px 3px rgba(0,0,0,0.1);
+  box-shadow:0px 1px 3px rgba(0,0,0,0.1);
+}
+.g-mn2{
+   width:100%;
+}
+.g-mn2:after{
+    clear:both;
+	display:block;
+	content:"";
+}
+.m-top .g-mn2c{
+   margin-right:365px;
+}
+.m-top .g-mn2c h2{
+   font-size:20px;
+   margin:10px 0 20px 0;
+}
+.m-top .g-mn2c p{
+  font-size:14px;
+  line-height:24px;
+}
+.m-top .g-sd2{
+  width:350px;
+  margin-left:-350px;
+}
+.g-sd2{
+   position:relative;
+   float:right; 
+}
+.m-recimg{
+   width:350px;
+   height:240px;
+}
+.g-wrap{
+  width:100%;
+}
+.m-infomation .top{
+  font-size:16px;
+  height:50px;
+  line-height:51px;
+  text-indent:20px;
+  border-bottom:1px solid #eee;
+}
+.m-infomation .bottom{
+  padding:40px 30px;
+}
+.f-richEditorText{
+  margin:0;
+  border:0;
+  text-align:left;
+  color:#666;
+  line-height:25px;
+  word-break:break-word;
+  word-wrap:break-word;
+  white-space:pre-wrap; 
+}
+.f-richEditorText p{
+  text-indent:2em;
+  /* margin-top:15px;  */
+}
+.f-richEditorText .h-25{
+  margin-top:25px;
+}
+.f-richEditorText div{
+  margin:10px 0;
+  padding:0;
+}

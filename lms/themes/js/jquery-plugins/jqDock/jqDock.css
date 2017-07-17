@@ -1,0 +1,14 @@
+/* Download by http://www.codefans.net */
+/* ================ DOCK 1 ================ */
+#dock { position: relative; top: 150px; }
+.dock-container { position: relative; top: -8px; height: 50px; padding-left: 20px; }
+a.dock-item { display: block; width: 50px; position: absolute; bottom: 0; text-align: center; text-decoration: none; color: #333; }
+.dock-item span { display: none; padding-left: 20px; }
+.dock-item img { border: 0; margin: 5px 10px 0px; width: 100%; }
+
+/* ================ DOCK 2 ================ */
+#dockContainer { position: fixed; top: 60px; left: 6px; }
+#jqDock { position: relative; bottom: 48px; }
+#jqDock li { list-style: none; }
+.jqDockLabel { background: #333; color: #fff; padding: 3px 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; }
+

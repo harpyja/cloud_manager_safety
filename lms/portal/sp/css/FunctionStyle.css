@@ -1,0 +1,25 @@
+/* CSS Document */
+html{margin:0;padding:0;}
+body,h1,h2,h3,p,blockquote,dl,dt,dd,ul,ol,li,button,input,textarea {margin: 0; padding: 0;}
+body {font:12px/1.8em "Microsoft Yahei",Tahoma, Helvetica, Arial, "SimSun", sans-serif;}
+h1,h2,h3 {font-weight:400;}
+h1 {font-size:20px;}
+h2,h3 {font-size:16px;}
+a {text-decoration:none; color:#483831;}
+a:hover {color:#45525f;}
+img {border:none;}
+a img:hover {background:none; border:none;}
+ol,ul {list-style:none;}
+
+
+/*alert box for table*/
+.tablebox{border-collapse:collapse;width:99%;margin:0 auto;}
+.tablebox thead{line-height:30px; text-align:right;height:30px;}
+.tablebox thead tr td{color:red;font-weight:bold;padding:0 10px 0 0;font-size:14px;}
+.tablebox tbody tr{height:40px;}
+.tablebox tbody td{border:1px solid #E7E7E7; text-align:center; font-size:14px;}
+.tablebox tfoot  td{text-align:right;}
+.tablebox tfoot td .go,.tablebox tfoot td .go-green{display:block;height:40px;text-align:center;line-height:40px;font-weight:bold;color:#fff;margin:20px auto 0 auto;}
+.tablebox tfoot  td .go:hover{text-decoration:none;}
+.go{background:#13A654;width:122px; }
+.go-green{background:url(../images/go-green.gif) no-repeat;width:107px;}

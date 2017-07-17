@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+*   模块名：全局样式
+*   author: Jesse Yu
+*   update: 2013/1/10
+*/
+html{margin:0;padding:0;}
+body,h1,h2,h3,p,blockquote,dl,dt,dd,ul,ol,li,button,input,textarea {margin: 0; padding: 0;}
+body {font:12px/1.8em "Microsoft Yahei",Tahoma, Helvetica, Arial, "SimSun", sans-serif;}
+h1,h2,h3 {font-weight:400;}
+h1 {font-size:20px;}
+h2,h3 {font-size:16px;}
+a {text-decoration:none; color:#483831;}
+a:hover {color:#45525f;}
+img {border:none;}
+a img:hover {background:none; border:none;}
+ol,ul {list-style:none;}

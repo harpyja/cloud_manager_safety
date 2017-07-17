@@ -1,0 +1,100 @@
+@charset "utf-8";
+#body{
+    margin: 0px;
+    padding: 0px;
+	float:left;
+	width: 100%;
+    height:auto;
+    border:0px solid gray;
+
+}
+
+#leftDiv
+{
+	float:left;
+	width: 800px;
+    height:100%;
+    border:0px solid gray;
+}
+
+#rightDiv
+{
+	float:left;
+	width:19%;
+	height:600px;
+    margin: 5px;
+}
+ #rightDiv ul {
+   margin: 0px;
+   padding: 0px;
+  list-style-type : none;
+}
+
+#rightDiv ul li {
+    cursor: pointer;
+    padding: 5px;
+    border:0px solid gray;
+    font-size:14px;
+}
+
+li.focus{
+   color:red ;
+}
+
+li.menuItemFocus {
+  background-color: #6699cc;
+}
+
+#msgDiv {
+    cursor: pointer;
+    position: absolute;
+    left:380px;
+    top : 280px;
+    z-index: 3;
+    width: 240px;
+    background-color: #6b8e23;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px 10px 10px 10px;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding: 7px;
+    min-height: 40px;
+    max-height: 150px;
+    text-align: left;
+    overflow-y:auto;
+}
+#rightMenu {
+    position: absolute;
+    display: none;
+    width: 100px;
+    border: 1px solid #EEEEEE;
+    background: #cccccc;
+    z-index: 10;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#rightMenu ul {
+    margin: 3px 2px;
+    padding: 0px;
+    list-style-type : none;
+    text-align: left;
+}
+
+#rightMenu ul li{
+    padding: 2px 2px 2px 15px;
+}
+
+#inputBox {
+    position: absolute;
+    top: 470px;
+    left:200px;
+    z-index: 5;
+}
+
+#inputBox input {
+    width: 200px;
+    z-index:6;
+    border: 0px;
+    font-weight: bold;
+}

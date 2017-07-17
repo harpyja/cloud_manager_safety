@@ -1,0 +1,138 @@
+html,body{height:100%;_height:100%;}
+#templatemo_wrapper {
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+
+#action_buttons { float: right; }
+#image_buttons { float: right; }
+
+/* action menu */
+#templatemo_action_menu {
+	clear: both;
+	width: 900px;
+	height: 40px;
+	padding: 0 30px;
+	background:url(images/templatemo_menu.png)
+}
+.dragHover { border:1px dotted red; }
+
+#templatemo_action_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#templatemo_action_menu ul li {
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+#templatemo_action_menu ul li a {
+	float: left;
+	display: block;
+	width: 100px;
+	height: 28px;
+	padding: 9px 0 0;
+	margin: 0 1px 0 0;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: #383838;
+	font-weight: 500;
+	letter-spacing: 1px;
+	outline: none;
+	border: none;
+}
+
+#templatemo_action_menu ul li a:hover, #templatemo_menu ul li .current { color: #000; height: 31px; padding: 6px 0 0; background: url(images/templatemo_menu_hover.png) bottom center no-repeat }
+
+/* end of action menu */
+
+#templatemo_main {
+	clear: both;
+	width: 960px;
+	padding: 30px 0;
+	background: #fff;
+}
+
+/*.col_w900 { width: 900px; padding: 0 30px; margin-bottom: 50px; }*/
+.col_w900 { width: 94%;height:120px;margin-bottom:0px; }
+.col_w900_last { padding: 0px 20px 500px 20px; margin: 0; background: none; }
+
+#templatemo_footer {
+	width: 960px;
+	padding: 20px 0;
+	text-align: center;
+	color: #ccc;
+}
+
+#templatemo_footer a { color: #fff; font-weight: normal }
+
+.window {
+	font-family: helvetica;
+    height: 80px;
+	font-size: 0.8em;
+	position: absolute;
+	z-index: 20;
+	text-align: center;
+}
+.window ul{
+    position: relative;
+    left:50px;
+    top: -90px;
+    border: 1px solid #346789;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    box-shadow: 2px 2px 19px #E0E0E0;
+    cursor: move;
+    opacity: 0.8;
+    padding: 1em;
+    list-style: none;
+    /*padding: 2px;*/
+}
+
+.window ul li{
+    cursor: pointer;
+}
+
+/*.window ul li a{
+    color: #990000
+}*/
+
+
+
+.ep {
+  /* //  position: relative;*/
+    cursor: pointer;
+}
+
+
+.label {
+	font-family: helvetica;
+	font-size: 1.0em;
+}
+.window .name {
+	font-family: helvetica;
+	font-size: 1.2em;
+	font-weight: bold;
+	position: relative;
+	top: -2px;
+}
+
+/* test menu */
+.example-target {
+	padding:4px 10px 4px 35px;
+	cursor:help;
+	color:black;
+}
+
+.connected{
+    color: green;
+}
+
+
+path {
+    cursor: pointer;
+}

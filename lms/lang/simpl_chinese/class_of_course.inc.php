@@ -1,0 +1,19 @@
+<?php
+$lang["AddClasses"] = "新增课程班级";
+$lang["ClassName"] = "班级名称";
+$lang["Class_of_course_list"] = "课程班级列表";
+$lang["UsersOutsideCourseClass"] = "本课程班级外学生";
+$lang["UsersInsideCourseClass"] = "本课程班级内学生";
+$lang["ClassDeletedFailedBecauseContainingStud"] = "你不能删除该班级,因为有本课程学生用户与之关联";
+$lang["AllClasses"] = "所有课程班级";
+$lang["NoCategoryClass"] = "未分班学员";
+$lang["ClassList"] = "课程班级列表";
+$lang["NumberOfUsers"] = "班级总人数";
+$lang["ModifyClassInfo"] = "修改课程班级信息";
+$lang["AddUsersToAClass"] = "往课程班级中添加学生";
+$lang["UsersAreUnSubscibedToClass"] = "用户已从该课程班级中注销";
+$lang["ClassDeleted"] = "课程班级信息已删除";
+$lang["CourseClassNameExist"] = "课程班级名称冲突，请更换另一个名称";
+$lang["UsersAreSubscibedToClass"] = "用户已被添加到该班级中!";
+$lang["UsersAreUnSubscibedToClass"] = "用户已从该班级中移除!";
+$lang['CourseClassManagement']='课程班级管理';

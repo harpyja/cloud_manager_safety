@@ -1,0 +1,3071 @@
+/*
+==============================================================================
+	GLOBAL STYLES - REDEFINED HTML TAGS
+==============================================================================
+*/
+.import,#global{background-color:#000;height:30px;line-height:30px;}
+
+/*html {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	SCROLLBAR-ARROW-COLOR: #000;
+	SCROLLBAR-FACE-COLOR: #eee;
+	SCROLLBAR-DARKSHADOW-COLOR: #aaa;
+	SCROLLBAR-HIGHLIGHT-COLOR: #f1fcff;
+	SCROLLBAR-3DLIGHT-COLOR: #aaa;
+	SCROLLBAR-SHADOW-COLOR: #aaa;
+	SCROLLBAR-TRACK-COLOR: #f2f7f9;
+}
+
+BODY {
+	SCROLLBAR-FACE-COLOR: #eeeeee;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #666666;
+	SCROLLBAR-3DLIGHT-COLOR: #999999;
+	SCROLLBAR-ARROW-COLOR: #ffffff;
+	SCROLLBAR-TRACK-COLOR: #ffffff;
+	SCROLLBAR-DARKSHADOW-COLOR: #eeeeee;
+}*/
+
+body {
+	background-color: #eee;
+	color: #444;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-family: 微软雅黑, V Trebuchet MS, Verdana, Arial, Helvetica, Lucida,sans-serif;
+	font-size: 14px;
+	margin: 0;
+	/*padding:71px 0 120px 0;*/
+        
+}
+
+form {
+	margin: 0px;
+}
+
+img {
+	border: none;
+}
+
+p,blockquote,ol,ul,h4 {
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 21px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 15px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+/* the following for regular <a> elements */
+a:link,a:visited,a:hover,a:active {
+
+	text-decoration: none;
+}
+
+a:link,a:visited {
+
+}
+
+a:hover {
+	color: #B31000;
+}
+
+a:active {
+	color: #f00;
+}
+
+b {
+	color: #666;
+}
+
+select,input[type=checkbox],input[type=radio],input[type=button],input[type=submit]
+	{
+	cursor: pointer;
+	font-size: 12px;
+}
+
+input[type=text] {
+	font-size: 12px;
+}
+
+input.checkbox {
+	border-width: 0;
+}
+
+input.link_alike,input.link_alike:hover {
+	background-color: #FFF;
+	border-width: 1px;
+	color: #4171b5;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+input.link_alike {
+	color: #4171b5;
+}
+
+input.link_alike:hover {
+	color: #FF0000;
+}
+
+/*
+==============================================================================
+	PAGE STRUCTURE
+==============================================================================
+*/
+#outerframe {
+	background-color: #fff;
+	border: 1px solid #fff;
+	/*position: relative; *//* do not remove, fixes a bug in IE */
+}
+
+/* Hides from IE5-mac \*/
+* html #outerframe {
+	height: 1%;
+}
+
+/* End hide from IE5-mac */
+#main {
+	background-color: #fff;
+	min-height: 500px;
+	margin-top: 6px;
+	
+	/*margin: 0px auto;
+	
+	padding: 0px 10px 10px 10px;
+	width: 99%;*/
+	position: relative; /* to avoid the IE peekabo bug*/
+}
+
+* html #main {
+	height: 400px;
+}
+
+/**changzf 2012/11/23 21:27*/
+#main table{
+    margin:auto;
+}
+
+
+.maincontent { /* for content section in main index.php file */
+	background-color: #fff;
+	float: left;
+	padding: 4px;
+	width: 78%;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	line-height: 0px;
+}
+
+/*#center {
+	margin: 0 190px 0 0;
+	min-height: 300px;
+	padding: 10px 0 40px 0;
+}*/
+.invisible,.invisible a:link,.invisible a:visited,a.invisible:link,a.invisible:visited
+	{
+	color: #999;
+}
+
+.portalCourse {
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.portalCourse ul {
+	list-style-type: none;
+}
+
+.portalCourse table {
+	margin-left: 20px;
+}
+
+/* user_portal course status icon */
+.coursestatusicons {
+	border: 0px solid #000;
+	float: left;
+	padding-right: 5px;
+	width: auto;
+}
+
+/*
+==============================================================================
+	HEADER STYLES
+==============================================================================
+*/
+#header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/*
+------------------------------------------------------------------------------
+	HEADER 1: Title, portal, organisation, course title
+------------------------------------------------------------------------------
+*/
+#header1 {
+	background: #264269;
+	border-bottom: 1px solid white;
+	color: #fff;
+	font-size: 12px;
+	padding: 4px;
+}
+
+#header1 table {
+	width: 100%;
+}
+
+#header1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+<!--
+#header1 {
+	background: #264269;
+	border-bottom: 1px solid white;
+	color: #fff;
+	font-size: 12px;
+	padding: 4px;
+}
+
+#header1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#header1 a:hover {
+	background: #264269;
+	text-decoration: underline;
+}
+
+#sitename {
+	font-weight: bold;
+	margin: 0;
+}
+
+#logo {
+	float: left;
+}
+
+#institution {
+	float: left;
+	font-weight: bold;
+}
+
+#my_courses {
+	float: right;
+	font-weight: bold;
+}
+
+--> /*
+------------------------------------------------------------------------------
+	HEADER 2: Users online, help, student/teacher view
+------------------------------------------------------------------------------
+*/
+#header2 {
+	background: #4171B5;
+	border-bottom: 1px solid #666;
+	color: #fff;
+	font-size: 1.0em;
+	font-weight: normal;
+	padding: 0.2em 0.5em;
+	padding-bottom: 0.2em;
+	position: relative; /* to avoid the IE peekabo bug*/
+}
+
+#header2 a {
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#header2 a:hover {
+	color: #B31000;
+}
+
+/* Header2Right: online users, student/teacher view, help */
+#Header2Right ul {
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative; /* to avoid the IE peekabo bug*/
+	text-align: right;
+	width: 70%;
+}
+
+#Header2Right ul li {
+	display: inline;
+}
+
+#Header2Right ul li a {
+	color: #fff;
+	padding: 4px 6px 4px 4px;
+}
+
+/*
+------------------------------------------------------------------------------
+	HEADER 3: TABS OF THE HEADER
+------------------------------------------------------------------------------
+*/
+#header3 {
+	background: #E5EDF9;
+	border-bottom: 1px solid #4171b5;
+	color: #006;
+	font-size: 1.0em;
+	height: auto;
+	margin: 0px;
+	margin-bottom: 10px;
+	padding: 0em 0em 0.4em 0em;
+}
+
+#header3 a {
+	color: #2754AF;
+	display: block;
+	font-weight: bold;
+	padding: 3px 3px 2px 3px;
+	text-decoration: none;
+}
+
+#header3 a:hover {
+	color: #f00;
+}
+
+#header3 ul {
+	display: inline;
+	vertical-align: top;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px 20px 0px 0px;
+}
+
+#header3 li {
+	border-right: solid 1px #73A2B6;
+	color: #73A2B6;
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#header3 li:hover {
+	margin: 0px;
+	padding-left: 5px;
+	padding-left: 5px;
+}
+
+#header3 #current {
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#header3 #current a {
+	border-bottom: 0px solid #4171b5;
+	color: #2754AF;
+}
+
+#header3 #current a:hover {
+	color: #f00;
+}
+
+#header3 .banner_links {
+	margin: 0;
+}
+
+#header3 input {
+	display: block;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+#header3 input:hover {
+	color: #333;
+}
+
+#header3 input.logout {
+	/* makes an input appear like a link in this header */
+	background-color: transparent;
+	border: none;
+	color: #2754AF;
+	display: inline;
+	font-size: 1.0em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	padding-right: 2px;
+	padding-top: 3px;
+}
+
+#header3 #logout {
+	margin-top: 0px;
+}
+
+#logout {
+	border-left: solid 1px #73A2B6;
+	display: inline;
+	float: right;
+	font-size: 1.0em;
+	text-align: right;
+	width: auto;
+}
+
+/*
+------------------------------------------------------------------------------
+    HEADER 4: not used
+------------------------------------------------------------------------------
+*/
+#header4 {
+	background-color: #EFEFEF;
+	color: #009;
+	margin-bottom: 3px;
+	margin-top: 0px;
+	padding: 4px;
+	float: left;
+	clear: right;
+	width: 99.5%;
+}
+
+#header4 a {
+	color: #4171b5;
+}
+
+#header4 a:hover {
+	color: #f00;
+	text-decoration: none;
+}
+
+/* The tool shortcuts */
+#toolshortcuts {
+	text-align: right;
+	clear: right;
+}
+
+/*
+==============================================================================
+    FOOTER STYLES
+==============================================================================
+*/
+#footer {
+	background-color: #E5EDF9;
+	background-color: #B31000;
+	border-top: 1px solid #4171B5;
+	font-size: 12px;
+	padding: 8px;
+	color: #FFF;
+    /**
+    position: absolute;
+    bottom: 0px;
+    width: 100%;*/
+}
+
+#footer .copyright {
+	float: right;
+}
+
+#myprofilefooter {
+	clear: both;
+	border-top: thin solid;
+	padding-top: 2px;
+}
+
+/*
+==============================================================================
+    NAVIGATION MENU
+==============================================================================
+*/
+.menu {
+	float: right;
+	width: 20%;
+}
+
+/* hgz 20070427 add h3 */
+.menu h3 {
+	width: 100%;
+	border-bottom: 1px solid #264269;
+	background: #4171B5 no-repeat top right;
+	color: #FFF;
+	padding: 5px 0px 5px 3px;
+	font: bold 1em Tahoma, Arial, Sans-Serif;
+	margin: 0 0 0 0;
+}
+
+.menucaption {
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 12px;
+}
+
+.menusection {
+	width: 100%;
+	border-bottom: 1px solid #4171B5;
+	border-left: 1px solid #4171B5;
+	border-right: 1px solid #4171B5;
+	background: #E5EDF9;
+	color: #414141;
+	padding: 0px 0px 0px 1px;
+	margin: 0px 0px 10px 0;
+}
+
+.menusectioncaption {
+	background-color: #E5EDF9;
+	font-size: 12px;
+	padding: 0 8px 0 4px;
+	position: relative;
+	top: -9px;
+}
+
+.menulist {
+	list-style: none;
+	margin: 0px 0px 12px 0;
+	padding: 10px 10px 5px 10px;
+}
+
+/* hgz 20070427 add */
+.menulist li {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #E0E8FA;
+}
+
+/* hgz 20070427 add */
+.menulist li a {
+	display: block;
+	padding: 3px 0 3px 22px;
+	background: url("images/ico_links.gif") 5px 6px no-repeat;
+	text-decoration: none;
+}
+
+.subMenuLeft {
+	float: left;
+	clear: left;
+}
+
+.subMenuRight {
+	float: right;
+	clear: right;
+}
+
+#centerwrap {
+	float: left;
+	width: 100%;
+	margin-right: -95%;
+	/* this needs to be less than 100% for Moz/Mac which thinks
+         it's empty otherwise. The difference is made up by putting a
+         negative left margin on the left float:
+	   Note IE/Mac doesn't like this method ~ it wants the 100% so it can
+	   be fed in using IE only CSS below becasue IE/Win also works with the 100% method.
+	*/
+}
+
+#center {
+	margin: 0 1% 0 0;
+	min-height: 400px;
+	padding: 10px 0 40px 0;
+}
+
+#toolnav {
+	float: left;
+	margin: 0;
+	margin-left: -6%;
+	/* the difference to make the left colum appear flush left */
+	padding: 0;
+	width: 170px;
+}
+
+#toolnav img { /*
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin: 0 4px 0 0;
+	*/
+
+}
+
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html #toolnav {
+	margin-left: 0px;
+}
+
+* html #center {
+	height: 1%;
+	margin-left: 0;
+}
+
+/* End hide from IE5/mac */ /*
+------------------------------------------------------------------------------
+    course navigation menu as a definition list
+------------------------------------------------------------------------------
+*/
+#toolnavbox {
+	border: 1px solid #4271b5;
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+#toolnavbox dl {
+	background: transparent;
+	font-size: 12px;
+	/*margin: 0 auto;*/
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+	width: 130px;
+}
+
+#toolnavbox dt {
+	background: transparent;
+	border-bottom: 1px solid #fff;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+}
+
+#toolnavbox dd {
+	background: #E5EDF9;
+	border-bottom: 1px solid #fff;
+	color: #009;
+	margin: 0;
+	text-align: left;
+}
+
+#toolnavlist a,#toolnavlist a:link {
+	background: #E5EDF9;
+	color: #4171b5;
+	display: block;
+	margin: 0;
+	padding: 5px 5px 5px 10px;
+	text-decoration: none;
+}
+
+#toolnavlist a:hover,#toolnavlist a#here {
+	background: #fff;
+	color: #4171b5;
+}
+
+/* --- end of course navigation menu section  --- */ /*
+==============================================================================
+    LOGIN AND LANGUAGE FORM
+==============================================================================
+*/
+#lang_form {
+	font-size: 12px;
+	margin: 0px 0px 0px 0px;
+	padding: 8px;
+	text-align: left;
+}
+
+#lang_form input,#lang_form select {
+	font-size: 12px;
+}
+
+/* hgz 20070427 */
+#formLogin {
+	font-size: 12px;
+	margin: 0px 0 0px 0;
+	padding: 2px;
+	text-align: left;
+}
+
+#formLogin label {
+	font-size: 12px;
+	margin: 4px 6px;
+}
+
+#formLogin input {
+	font-size: 13px;
+	margin: 4px 6px;
+}
+
+#login_fail {
+	background-color: #fff;
+	border: 1px solid #f00;
+	color: #f00;
+	font-size: 12px;
+	margin: 0 6px 6px 6px;
+	padding: 4px;
+}
+
+input.mainoption {
+	font-weight: bold;
+}
+
+input.liteoption {
+	font-weight: normal;
+}
+
+/*
+==============================================================================
+    COURSE HOMEPAGE
+==============================================================================
+*/ /* various sections in course-home.php file  */
+#toolremove {
+	border: 2px solid #f00;
+	color: #f00;
+	font-weight: bold;
+	margin: 10px auto;
+	padding: 10px;
+	width: 40%;
+}
+
+#courseintro { /*border-bottom: 1px solid #4171B5;*/
+	clear: both;
+	margin: 10px auto;
+	padding: 10px;
+	width: 80%;
+}
+
+#courseintro_icons {
+	clear: both;
+	margin: 10px auto;
+	margin-top: 10px;
+	margin-left: 138px;
+	width: 80%; //
+	display: inline;
+}
+
+.everybodyview { /*margin: 10px auto;*/
+	margin-left: 138px;
+	padding: 10px;
+	position: relative; /* to avoid the IE peekabo bug ?*/
+	width: 80%;
+}
+
+.Authoringview { /*margin: 5px auto 20px;*/
+	margin-left: 138px;
+	position: relative;
+	width: 80%;
+}
+
+.courseadminview {
+	border: 1px solid #4171B5;
+	margin: 25px auto 10px;
+	padding: 10px;
+	position: relative;
+	width: 80%;
+}
+
+.platformadminview {
+	border: 1px solid #4171B5;
+	margin: 25px auto 10px;
+	padding: 10px;
+	position: relative;
+	width: 80%;
+}
+
+.viewcaption {
+	background-color: #fff;
+	color: #4171B5;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 4px;
+	position: relative;
+	top: -20px;
+}
+
+/*
+==============================================================================
+    AGENDA
+==============================================================================
+*/
+#agenda {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid #4171B5;
+	border-collapse: collapse;
+}
+
+#agenda .title a {
+	color: #fff;
+}
+
+#agenda .agendaitem {
+	font-size: 12px;
+}
+
+.agenda_month_divider {
+	background-color: #4171B5;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#agenda_select {
+	border: 0px solid green;
+	list-style: none;
+	margin: 30px 0 0 0;
+	padding: 0 0 0 10px;
+}
+
+/*
+------------------------------------------------------------------------------
+    styles for the agenda (day, week, month view)
+------------------------------------------------------------------------------
+*/
+#agenda_list {
+	border: 1px solid #fff;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*The caption of the calendar (displays the month and the << and >> links*/
+#agenda_list .title {
+	background-color: #4171B5;
+	border: 1px solid #264269;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px 10px;
+	text-align: center;
+}
+
+#agenda_list .title a {
+	color: #fff;
+}
+
+/* The cells with the name of the days of the weeks (mon->sun)*/
+#agenda_list .weekdays {
+	background-color: #D3DFF1;
+	border: 1px solid #264269;
+	border-collapse: collapse;
+	font-weight: bold;
+	text-align: center;
+}
+
+#agenda_list .days_week,#agenda_list .days_weekend,#agenda_list .days_today
+	{
+	border: 1px solid #264269;
+	border-collapse: collapse;
+	height: 40px;
+	text-align: left;
+	vertical-align: top;
+	width: 12%;
+}
+
+/* The cells for the days (1->31) */
+#agenda_list .days_week {
+	background-color: #f5f5f5;
+}
+
+#agenda_list .days_weekend {
+	background-color: #e6e6e6;
+}
+
+#agenda_list .days_today {
+	background-color: #FFCA8D;
+	color: #CC3300;
+	font-weight: bold;
+}
+
+#agenda_list .data,#agenda_list .datanotbold,#agenda_list .text,#agenda_list .data_hidden,#agenda_list .datanotbold_hidden,#agenda_list .text_hidden,#agenda_list .datanow,#agenda_list .datanotboldnow,#agenda_list .textnow
+	{
+	border: 0px solid #4171B5;
+	border-collapse: collapse;
+	padding: 2px 10px;
+	text-align: left;
+}
+
+/* text in the cells: display of agenda items (visible)*/
+#agenda_list .data {
+	background-color: #eee;
+	font-weight: bold;
+}
+
+#agenda_list .datanotbold {
+	background-color: #eee;
+	font-weight: normal;
+}
+
+#agenda_list .text {
+	background-color: #fff;
+	font-weight: normal;
+}
+
+/*text in the cells: display of agenda items (invisible)*/
+#agenda_list .data_hidden {
+	background-color: #eee;
+	color: #999999;
+	font-weight: bold;
+}
+
+#agenda_list .datanotbold_hidden {
+	background-color: #eee;
+	color: #999999;
+	font-weight: normal;
+}
+
+#agenda_list .text_hidden {
+	background-color: #fff;
+	color: #999999;
+	font-weight: normal;
+}
+
+/*text in the cells: display of agenda items (highlighted)*/
+#agenda_list .datanow {
+	background-color: #FFCC00;
+	font-weight: bold;
+}
+
+#agenda_list .datanotboldnow {
+	background-color: #FFCC00;
+	font-weight: normal;
+}
+
+#agenda_list .textnow {
+	background-color: #fff;
+	font-weight: normal;
+}
+
+/*
+------------------------------------------------------------------------------
+    styles for the mini agenda
+------------------------------------------------------------------------------
+*/
+#smallcalendar {
+	border: 1px solid #fff;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#smallcalendar .title {
+	background-color: #4171B5;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px;
+	text-align: center;
+}
+
+#smallcalendar .title a {
+	color: #fff;
+}
+
+#smallcalendar .weekdays {
+	background-color: #D3DFF1;
+	border: 1px solid #fff;
+	border-collapse: collapse;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#smallcalendar .days_week {
+	background-color: #f5f5f5;
+	border-collapse: collapse;
+	font-size: 12px;
+	text-align: center;
+}
+
+#smallcalendar .days_weekend {
+	background-color: #e6e6e6;
+	border: 1px solid #fff;
+	border-collapse: collapse;
+	font-size: 12px;
+	text-align: center;
+}
+
+#smallcalendar .days_today {
+	background-color: #FFCA8D;
+	border: 1px solid #FA8500;
+	border-collapse: collapse;
+	font-size: 12px;
+	text-align: center;
+	width: 12%;
+}
+
+/*
+------------------------------------------------------------------------------
+    styles for the personal agenda
+------------------------------------------------------------------------------
+*/
+.personal_agenda,.personal_agenda a:link,.personal_agenda a:visited,a.personal_agenda:link,a.personal_agenda:visited
+	{
+	color: #008000;
+}
+
+.personal_agenda a:hover,a.personal_agenda:hover {
+	color: #666666;
+}
+
+/*
+==============================================================================
+    DISPLAY MESSAGES
+==============================================================================
+*/ /* Common message styles  V1.2.0 */ /*
+.normal-message,.warning-message,.confirmation-message,.error-message {
+	border-width: 1px;
+	border-style: solid;
+	left: 50%;
+	margin: 10px auto;
+	margin-left: -250px;
+	min-height: 30px;
+	padding: 5px;
+	position: relative;
+	right: 50%;
+	width: 520px;
+}
+
+.normal-message {
+	background-color: #E5EDF9;
+	border-color: #4171B5;
+	color: #000;
+}
+
+.warning-message {
+	background-color: #FFEFA7;
+	border-color: #FFB30F;
+	color: #000;
+}
+
+.confirmation-message {
+	background-color: #CAF0C7;
+	border-color: #1F8323;
+	color: #000;
+}
+
+.error-message {
+	background-color: #FFD1D1;
+	border-color: #FF0000;
+	color: #000;
+}
+
+#message {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#message select {
+	margin: 10px 0;
+	width: 220px;
+}
+
+#message textarea {
+	margin: 10px 0;
+}
+
+#message td {
+	padding: 4px;
+}*/ /*****************************************************
+ *  DISPLAY MESSAGES	                             *
+ *****************************************************/
+	/* Common message styles V 1.3.0*/
+.normal-message,.warning-message,.confirmation-message,.error-message {
+	width: 458px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size:14px;
+	min-height: 65px;
+	margin-top: 0px;
+}
+
+.normal-message {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #B31000;
+	color: #4171B5;
+	background-color: #FFF;
+}
+
+.warning-message {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #B31000;/*#FF6600;*/
+	color: #666666;
+	background-color: #FFCD82;
+}
+
+.confirmation-message {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #B31000;/*#1F8323;*/
+	color: #1F8323;
+	background-color: #EFEFEF;
+}
+
+.error-message {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #B31000;/*#FF0000;*/
+	color: #FF0000;
+	background-color: #EFEFEF;
+}
+
+.confirmation-message .bottom-link,.error-message .bottom-link,.normal-message .bottom-link,.warning-message .bottom-link
+	{
+	position: absolute;
+	bottom: 0.2em;
+	right: 0.5em;
+}
+
+/*
+==============================================================================
+    DOCUMENT MODULE
+==============================================================================
+*/ /* styles from the document.php file */
+.comment {
+	margin-left: 30px;
+}
+
+/* styles from the upload.php file */
+dl.upload_option {
+	margin: 1em 0;
+	padding: 0;
+}
+
+.upload_option dt {
+	font-weight: bold;
+	margin: 0;
+}
+
+.upload_option dd {
+	margin: 0;
+}
+
+/*
+==============================================================================
+    DROPBOX MODULE
+==============================================================================
+*/ /* styles from dropbox.php file */
+.dropbox_detail {
+	font-size: small
+}
+
+.dropbox_date {
+	font-style: italic
+}
+
+.dropbox_person {
+	font-weight: bold
+}
+
+.dropbox_listTitle {
+	color: #000000;
+}
+
+.dropbox_feedback {
+	font-size: x-small;
+	height: 50px;
+	overflow: auto;
+	width: 200px;
+}
+
+.dropbox_feedbacks {
+	height: 250px;
+	width: 100%;
+	overflow: auto
+}
+
+/*
+==============================================================================
+    CHAT MODULE
+==============================================================================
+*/ /* styles for chat / conference tools */
+#chat_entermessage {
+	background-color: #D6E5FA;
+	border-top: 1px solid #4171B5;
+	padding: 5px;
+	margin: 0;
+}
+
+/* the following for the greyed out elements */
+a.nobold:link,a.nobold:visited,a.nobold:active {
+	font-weight: normal;
+	color: #999;
+	margin: 0 0 0 25px;
+}
+
+a.nobold:hover {
+	font-weight: normal;
+	color: #999;
+	text-decoration: underline;
+	margin: 0 0 0 25px;
+}
+
+.note {
+	background-color: #FFF089;
+	border: 0px solid #4171B5;
+	color: #4171B5;
+	font-size: 12px;
+	font-family: 微软雅黑, Verdana !important,verdana, arial, helvetica, sans-serif;
+	line-height: 14px;
+	margin: 6px;
+	padding: 4px;
+}
+
+.alternativeBgLight {
+	background-color: #f5f5f5;
+	border: 1px solid #4171B5;
+	border-collapse: collapse;
+}
+
+.alternativeBgDark {
+	background-color: #ccf;
+	border: 1px solid #4171B5;
+	border-collapse: collapse;
+}
+
+.myagendatoday {
+	background-color: #FFCA8D;
+	border-collapse: collapse;
+	color: #CC3300;
+	font-family: 微软雅黑, Verdana !important, verdana, arial, helvetica,
+		sans-serif;
+	font-weight: bold;
+}
+
+.OnlineTree {
+	margin-left: 5px;
+	width: 95%;
+}
+
+/*
+==============================================================================
+    FORM STYLES
+==============================================================================
+*/
+div.row {
+	clear: both;
+	margin-top:10px;
+	width: 100%;
+	border:1px dashed #E1E1E1;
+	overflow:hidden;
+	
+}
+.row .label{
+	margin-right:10px;
+	height:50px;
+	line-height:50px;	
+}
+div.row div.form_header {
+	white-space: nowrap;
+	padding: 2px;
+	border: 1px solid #636363;
+	background-image: url(images/menu_title_bg.jpg);
+	background-position: bottom;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 20px;
+}
+
+div.row div.label {
+	float: left;
+	text-align: right;
+	width: 15%;
+	background:#F7F7F7;
+	padding:0 0 0 10px;
+}
+
+div.row div.formw {
+	width: 83%;
+}
+
+[dir=ltr] div.row div.label,[dir=rtl] div.row div.formw {
+	float: left;
+	text-align: right;
+}
+
+[dir=rtl] div.row div.label,[dir=ltr] div.row div.formw {
+	float: right;
+	text-align: left;
+}
+
+span.form_requi#B31000 {
+	color: #f00;
+}
+
+span.form_error {
+	color: #f00;
+	font-size: x-small;
+	margin: 2px;
+}
+
+/*
+==============================================================================
+    ACCORDION STYLES
+==============================================================================
+*/
+.accordion_header {
+	background-color: #E5EDF9;
+	border: 1px solid gray;
+	cursor: pointer;
+	margin-top: 10px;
+	padding: 5px;
+	width: 300px;
+}
+
+.accordion_content {
+	background-color: #fafafa;
+	border: 1px solid gray;
+	display: none;
+	padding: 5px;
+	text-align: left;
+	width: 770px;
+}
+
+/*
+==============================================================================
+    DATA TABLE STYLES
+==============================================================================
+*/
+.cell_header { /* header cell in data table in tools */
+	background-color: #EEEEFF;
+	font-weight: bold;
+	padding-left: 5px;
+	text-align: left;
+}
+
+.data_table {
+	border-collapse: collapse;
+	margin-top: 5px;
+	/*margin-bottom: 5px;
+	margin-left: 5px;*/
+	padding: 5px;
+	width: 100%;
+}
+
+.data_table th {
+	background:linear-gradient(to top, #54A2DE, #53A0E2) repeat scroll 0 0 #4F9CDD;
+	color: #FFF;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px dotted #e1e1e1;
+	border-right: 1px dotted #e1e1e1;
+	padding: 3px;
+	font-size: 13px;
+	height: 25px;
+	/*filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#3d7aa7,endcolorstr=#4891c6,gradientType=0);*/
+	/*background-image:url(images/menu_title_bg.jpg); */
+	/*#background-image: url(../img/header_bg.gif);*/
+}
+
+.data_table th a {
+	color: #fff;
+}
+
+.data_table th a:hover {
+	color: #ccc;
+}
+
+.data_table tr.row_odd {
+	background-color: #fafafa;
+}
+
+.data_table tr.row_odd:hover,.data_table tr.row_even:hover {
+	background-color: #f0f0f0;
+}
+
+.row_odd_hover { /* use for IE */
+	background-color: #f0f0f0;
+}
+
+.row_even_hover { /* use for IE */
+	background-color: #f0f0f0;
+}
+
+.data_table tr.row_even {
+	background-color: #fff;
+}
+
+.data_table td {
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px dotted #e1e1e1;
+	border-right: 1px dotted #e1e1e1;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.data_table td.border {
+	border: 1px solid gray;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.data_table td.none {
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.data_table td #B31000Text {
+	color: #B31000;
+}
+
+.data_table td.borderRight {
+	border-bottom: none;
+	border-left: none;
+	border-right: 1px solid gray;
+}
+
+.data_table td.borderLeft {
+	border-bottom: none;
+	border-left: 1px solid gray;
+	border-right: none;
+}
+
+.data_table td.noLink {
+	color: grey;
+}
+
+.data_table tr.tableName {
+	border: 1px solid gray;
+	background-color: #e6e6ff;
+	padding: 5px;
+	text-align: left;
+}
+
+.data_table tr.total {
+	background-color: #ffffcc;
+	border: 1px solid gray;
+	padding: 5px;
+	text-align: left;
+}
+
+.data_table th.head {
+	background-color: #ffffcc;
+	border: 1px solid gray;
+	padding-right: 20px;
+}
+
+.quiz_data_table td {
+	border-collapse: collapse;
+	border-left: 1px dotted #666;
+	border-bottom: 1px dotted #666;
+}
+
+.quiz_data_table th {
+	border-collapse: collapse;
+	border-left: 1px dotted #666;
+	border-top: 1px dotted #666;
+	border-bottom: 1px dotted #666;
+}
+
+/*liyu 20090920 */
+.data_list {
+	border-collapse: collapse;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	width: 100%;
+}
+
+.data_list td {
+	border-bottom: 1px solid #cccccc;
+	border-left: 0px dotted #e1e1e1;
+	border-right: 0px dotted #e1e1e1;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.data_list td.border {
+	border: 1px solid gray;
+	padding: 5px;
+	vertical-align: top;
+}
+
+/*
+==============================================================================
+    ANOTHER DATA TABLE STYLES (module : course_category course_description)
+==============================================================================
+*/
+.contentData {
+	width: 100%;
+}
+
+.contentData th {
+	border-bottom: 1px solid gray;
+	vertical-align: bottom;
+}
+
+.contentData tr.row_odd:hover,.contentData tr.row_even:hover {
+	background-color: #f0f0f0;
+}
+
+.contentData td {
+	padding-top: 5px;
+}
+
+.contentData th img {
+	vertical-align: middle;
+}
+
+/*
+==============================================================================
+    admin page tool list definitions
+==============================================================================
+*/
+.tool_list dt {
+	font-weight: bold;
+}
+
+.tool_list dd {
+	margin: 0;
+	padding: 4px 0 0 10px;
+}
+
+/*
+==============================================================================
+    divs for category list / platform news on home page
+==============================================================================
+*/
+.home_cats {
+	background: #fff;
+	float: left;
+	margin: 0;
+	padding: 0px;
+	padding-top: 0px;
+	position: relative;
+	width: 70%;
+}
+
+.home_news {
+	background: #fff;
+	float: right;
+	margin: 0;
+	padding: 0px;
+	padding-top: 8px;
+	position: relative;
+	width: 45%;
+}
+
+label.left {
+	float: left;
+	width: 15em;
+	margin: 0 0 0.5em 0;
+}
+
+form br {
+	clear: both;
+}
+
+/* Fix for alignment problem in IE-Win browsers  */
+	/*  Hide from IE5-mac. Only IE-win sees this. \*/
+* html .label {
+	margin-right: 10px;
+}
+
+* html .data {
+	height: 1%;
+	margin-left: 0;
+}
+
+/* End hide from IE5/mac */
+.radio,.checkbox {
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.requi#B31000 {
+	color: #f00;
+	font-weight: bold;
+}
+
+/*
+==============================================================================
+    Admin section
+==============================================================================
+*/
+div.admin_section {
+	float: left;
+	margin: 10px 20px;
+	padding: 5px;
+	width: 80%;
+}
+
+div.admin_section h4 {
+	color: #666;
+	border-bottom: 1px solid gray;
+	margin: 0;
+	width: 100%;
+}
+
+div.admin_section table {
+	margin-top: 15px;
+	margin-left: 50px;
+}
+
+/* do not use it Zhong 20070811
+.user_course_category {
+    width: 50%;
+    height: 25px;
+	color: #666;
+	font-weight: bold;
+	list-style-type: none;
+  	border-bottom: 1px solid gray;
+  	vertical-align: bottom;
+}
+*/ /*
+==============================================================================
+    DOKEOS CONFIG SETTINGS OF THE PLATFORM ADMIN SECTION
+==============================================================================
+*/
+.settingtitle {
+	background: #EFEFEF;
+	border-bottom: 1px solid #cccccc;
+	color: #666666;
+	font-size: 12px;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 5px;
+	padding: 5px;
+}
+
+.settingcomment {
+	color: #000000;
+	font-size: 12px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.settingvalue {
+	list-style-type: none;
+	margin: 5px;
+	padding: 5px;
+}
+
+/* liyu : 20091027 */
+	/***************************************************************
+ *  DOKEOS CONFIG SETTINGS OF THE PLATFORM ADMIN SECTION 	   *
+ ***************************************************************/
+.sectiontitle {
+	background-color: #EFEFEF;
+	border: 1px solid #cccccc;
+	font-weight: bold;
+	color: #666666;
+	list-style-type: none;
+	padding: 5px;
+	font-size: 11px;
+}
+
+.sectioncomment {
+	color: #000000;
+	margin: 5px;
+	padding: 5px;
+	font-size: 11px;
+}
+
+.sectionvalue {
+	list-style-type: none;
+	margin: 5px;
+	padding: 5px;
+}
+
+/*
+==============================================================================
+    ANNOUNCEMENTS
+==============================================================================
+*/
+.announcements_datum {
+	color: #666666;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.announcementList {
+	width: 100%;
+	height: 320px;
+}
+
+.announcementTree { /*width: 200px;*/
+	margin-top: 5px;
+	border-bottom: 1px dotted #e1e1e1;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/*
+==============================================================================
+    SYSTEM ANNOUNCEMENTS
+==============================================================================
+*/
+.systemAnnouncementTitle {
+	width: 100px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.systemAnnouncementList {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+div.system_announcement_content {
+	margin-left: 20px;
+	border-left: 1px solid gray;
+	padding-left: 5px;
+}
+
+/*
+==============================================================================
+    THE NEW FORUM
+==============================================================================
+*/ /*
+------------------------------------------------------------------------------
+    FORUM CATEGORY
+------------------------------------------------------------------------------
+*/
+.forum_category {
+	background-color: #0066CC;
+	color: #fff;
+}
+
+.forum_category a {
+	color: #fff;
+}
+
+.forum_category_header {
+	background-color: #0066CC;
+	color: #fff;
+}
+
+tr.forum_category_header a {
+	color: #fff;
+}
+
+/*
+------------------------------------------------------------------------------
+    FORUM
+------------------------------------------------------------------------------
+*/
+.forum_header {
+	background-color: #EFEFEF;
+}
+
+/*
+------------------------------------------------------------------------------
+   THREAD
+------------------------------------------------------------------------------
+*/
+.forum_threadheader {
+	background-color: #EFEFEF;
+}
+
+tr.forum_threadheader td {
+
+}
+
+/*
+------------------------------------------------------------------------------
+    POST
+------------------------------------------------------------------------------
+*/
+.quote {
+	background-color: #EFEFEF;
+}
+
+.forum_message_left {
+	background-color: #FEFEFE;
+	border-bottom: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-top: 3px solid #ccc;
+	vertical-align: top;
+	width: 180px;
+}
+
+.forum_message_left_2_be_approved {
+	background-color: #F7F7F7;
+	/*border-bottom: 1px solid #666666;*/
+	border-right: 1px solid #aaa;
+	color: #999;
+	vertical-align: top;
+	width: 180px;
+}
+
+.forum_message_post_title {
+	background-color: #FAFAFA;
+	/*border-bottom: 1px solid #666666;*/
+	font-weight: bold;
+	height: 10px;
+	border-top: 3px solid #ccc;
+	border-right: 1px solid #aaa;
+}
+
+.forum_message_post_title_2_be_approved {
+	background-color: #F7F7F7;
+	/*border-bottom: 1px solid #666666;*/
+	color: #999;
+	font-weight: bold;
+	height: 10px;
+}
+
+.forum_message_post_text {
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 10px;
+	vertical-align: top;
+	border-right: 1px solid #aaa;
+}
+
+.forum_message_post_text_2_be_approved {
+	/*border-bottom: 1px solid #666666;*/
+	color: #999;
+	margin-bottom: 10px;
+	vertical-align: top;
+}
+
+.current {
+	font-weight: bold;
+}
+
+.structure {
+	background-color: #F7F7F7;
+	/*border-bottom: 1px solid #666666;*/
+	font-weight: bold;
+	height: 20px;
+}
+
+a.forum_group_link {
+	display: inline;
+	font-weight: lighter;
+}
+
+/*
+------------------------------------------------------------------------------
+    BLOG
+------------------------------------------------------------------------------
+*/
+span.blog_title {
+	color: #1657A9;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+span.blog_subttitle {
+	font-size: 12px;
+}
+
+td.blog_left {
+	border-right: 1px solid #dddddd;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+
+td.blog_right {
+	padding-left: 10px;
+}
+
+td.blog_menu_title {
+	background-color: #dddddd;
+	color: #1657A9;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 2px;
+}
+
+td.blog_menu {
+	border-bottom: 1px dashed #dddddd;
+	border-left: 1px dashed #dddddd;
+	border-right: 1px dashed #dddddd;
+	padding: 10px;
+}
+
+td.blog_menu ul {
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+
+td.blog_menu ul li {
+
+}
+
+span.blogpost_title {
+	color: #1657A9;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+span.blogpost_date {
+	color: #333333;
+	display: block;
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+span.blogpost_info {
+	border-top: 1px solid #dddddd;
+	color: #333333;
+	display: block;
+	margin-top: 5px;
+}
+
+table.newBlog {
+	background-color: #f6f6f6;
+	border: 1px solid #dddddd;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+table.newTask {
+	background-color: #f6f6f6;
+	border: 1px solid #dddddd;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+table.new_comment {
+	background-color: #F4F4F4;
+	border: 1px solid #dddddd;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 10px;
+}
+
+div.blogpost_comment {
+	background-color: white;
+	border: 1px dashed #dddddd;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+span.blogpost_comment_title {
+	color: #1657A9;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+span.blogpost_comment_date {
+	color: #333333;
+	display: block;
+	font-size: 10px;
+	padding-bottom: 10px;
+}
+
+span.blogpost_comment_info {
+	border-top: 1px solid #dddddd;
+	color: #333333;
+	display: block;
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+div.blogpost {
+	background-color: #ECECEC;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+div.comments {
+	background-color: #F4F4F4;
+	border: 1px solid #dddddd;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.link {
+	color: #1657A9;
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #abd9f1;
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*
+==============================================================================
+    INSTALLATION
+==============================================================================
+*/
+#installation_steps {
+	background-color: #EFEFEF;
+	float: left;
+}
+
+.current_step {
+	font-weight: bold;
+}
+
+.RequirementHeading {
+	margin-right: 10px;
+}
+
+.RequirementHeading h1 {
+	border-bottom: 1px solid #0066CC;
+	color: #0066CC;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.RequirementText {
+	color: #666;
+	float: right;
+	font-size: 1.0em;
+	font-weight: normal;
+	width: 200px;
+}
+
+.RequirementContent {
+	color: #000;
+	font-size: 1.0em;
+	font-weight: normal;
+}
+
+.RequirementContent table {
+	border: 1px solid #ccc;
+	width: 400px;
+}
+
+.RequirementContent table th {
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+}
+
+.requirements-item {
+	background-color: #f7f7f7;
+	padding-left: 2px;
+	width: 50%;
+}
+
+.requirements-value {
+	text-align: right;
+}
+
+/*
+==============================================================================
+    styles below here are not necessarily used in the current
+	release and the CVS files, they are from earlier versions,
+	and have been left untouched for anyone needing them in
+	their own platform ...
+==============================================================================
+*/
+.topBanner a:link,.topBanner a:active,.topBanner a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.topBanner table {
+	text-decoration: none;
+}
+
+.topBanner a:hover {
+	text-decoration: underline;
+}
+
+.topBanner td {
+	border-top: solid White 1px;
+}
+
+.alternativeBgLight {
+	background-color: #f5f5f5;
+}
+
+.alternativeBgDark {
+	background-color: #e6e6e6
+}
+
+.forms {
+	letter-spacing: normal;
+	padding: 2px 5px;
+	text-align: justify;
+	text-indent: 3pt;
+	word-spacing: normal;
+}
+
+.formsTips {
+	text-align: justify;
+	text-indent: 15pt;
+	word-spacing: normal;
+}
+
+/*
+input.forms	{
+	letter-spacing: normal;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: justify;
+	text-indent: 3pt;
+	word-spacing: normal;
+}
+*/
+.warn {
+	border: thin double Silver;
+	color: Red;
+	font-family: 微软雅黑, Verdana !important, serif;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 25px;
+}
+
+.small {
+	font-family: 微软雅黑, Verdana !important, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px
+}
+
+.xsmall {
+	font-family: 微软雅黑, Verdana !important, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px
+}
+
+.xxsmall {
+	font-family: 微软雅黑, Verdana !important, Verdana, Arial, Helvetica,sans-serif;
+	font-size: 9px
+}
+
+/*
+------------------------------------------------------------------------------
+    TABBED INTERFACE
+------------------------------------------------------------------------------
+*/
+#tabbed_menu {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+	height: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#tabbed_menu #tabbed_menu_tabs li {
+	display: inline;
+	list-style-type: none;
+	margin: 0 10;
+	padding: 0;
+}
+
+#tabbed_menu #tabbed_menu_tabs a:link,#tabbed_menu_tabs a:visited {
+	background: #f3f3f3;
+	border: 1px solid #cccccc;
+	border-bottom: 1px solid #666666;
+	color: #666;
+	float: left;
+	font-weight: bold;
+	margin-right: 4px;
+	padding: 2px 10px 2px 10px;
+	text-decoration: none;
+}
+
+#tabbed_menu #tabbed_menu_tabs a:link .active,#tabbed_menu_tabs a:visited
+	.active {
+	background: #fff;
+	border: 1px solid #666666;
+	border-bottom: 1px solid #fff;
+	color: #000;
+}
+
+/*
+------------------------------------------------------------------------------
+    FCKeditor
+------------------------------------------------------------------------------
+*/
+#WCAG-editor {
+	border: 1px #4171B5 solid;
+	background-color: #E5EDF9;
+	width: 100%;
+}
+
+#WCAG-editor .title {
+	padding: 2px;
+	background-color: #4171B5;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#WCAG-editor .body {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 13px;
+	padding-bottom: 5px;
+}
+
+#WCAG-editor textarea {
+	width: 100%;
+	height: 180px;
+	border: 1px #7F9DB9 solid;
+}
+
+/* don't work on IE < 7 */
+#WCAG-editor input[type="checkbox"],#WCAG-editor input[type="radio"],#WCAG-editor input[type="submit"]
+	{
+	width: auto;
+}
+
+/* don't apply on IE < 7 */
+#WCAG-editor input {
+	width: 100%;
+}
+
+/* only for IE < 7 */
+#WCAG-editor #submit,#WCAG-editor #visible_teacher,#WCAG-editor #visible_student,#WCAG-editor #visible_guest
+	{
+	width: auto;
+}
+
+#WCAG-content img {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+#WCAG-content p {
+	text-align: justify;
+}
+
+/* hack for IE < 7 */ /* hgz 20070628 This is not well*/
+#course_description input {
+	width: auto;
+}
+
+#course_description #imagefile,#course_description #imageLabel,#course_description #link,#course_description #linkLabel
+	{
+	width: 100%;
+}
+
+.WCAG-form textarea {
+	width: 100%;
+	height: 180px;
+}
+
+.skip {
+	display: none;
+}
+
+/*
+------------------------------------------------------------------------------
+    OTHERS
+------------------------------------------------------------------------------
+*/
+.input_titles {
+	width: 300px;
+}
+
+/*
+------------------------------------------------------------------------------
+    Survey
+------------------------------------------------------------------------------
+*/
+#survey_title {
+	background-color: #E5EDF9;
+	/*color:#000;*/
+	padding: 8px;
+	border-top: 1px solid #b0b0b0;
+	border-left: 1px solid #b0b0b0;
+	border-right: 1px solid #b0b0b0;
+}
+
+#survey_subtitle {
+	background-color: #E5EDF9;
+	padding: 2px;
+	border-left: 1px solid #b0b0b0;
+	border-right: 1px solid #b0b0b0;
+	border-bottom: 1px solid #b0b0b0;
+}
+
+#survey_contain {
+	width: 95%;
+	margin-left: 20px;
+}
+
+.survey_content {
+	background-color: #EFEFEF;
+	padding: 5px;
+	border: 1px solid #EFEFEF;
+}
+
+.survey_question_wrapper {
+	border-top: 1px dotted #e1e1e1;
+	border-left: 1px dotted #e1e1e1;
+	border-right: 1px dotted #e1e1e1;
+}
+
+.survey_question { /* 264269 4271b5 E5EDF9 */
+	background-color: #EFEFEF;
+	padding: 8px;
+}
+
+.survey_question_options { /* 264269 4271b5 E5EDF9 */
+	background-color: #FFF;
+	padding: 5px;
+	border-top: 1px dotted #e1e1e1;
+}
+
+/*
+------------------------------------------------------------------------------
+    Form Style
+------------------------------------------------------------------------------
+*/
+.formTableTh {
+	padding: 2px 2px 2px 2px;
+	background-color:#218813;
+	border-left: 1px dotted #e1e1e1;
+	border-right: 1px dotted #e1e1e1;
+	color: #FFF;
+	text-align: left;
+	height: 25px;
+}
+
+.formTableTh a:link,.pagedList th a:visited {
+	color: #FFF;
+}
+
+.formTableTd {
+	border-left: 1px dotted #e1e1e1;
+	border-right: 1px dotted #e1e1e1;
+	border-bottom: 1px dotted #e1e1e1;
+	border-top: 1px dotted #e1e1e1;
+}
+.formTableTd textarea,.formTableTd input{
+	border:1px solid #666;	
+}
+.formLabel {
+	border-left: 1px dotted #e1e1e1;
+	border-right: 1px dotted #e1e1e1;
+	border-bottom: 1px dotted #e1e1e1;
+	text-align: right !important;
+	width: 20% !important;
+	background-color: #F7F7F7 !important;
+	border-right: none !important;
+	font-weight: 500;
+    height:40px; /**changzf 2012/11/23/09:30*/
+}
+
+
+.inputButton {
+	border-style: solid;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-top-color: #D9DFEA;
+	border-left-color: #D9DFEA;
+	border-bottom-color: #0e1f5b;
+	border-right-color: #0e1f5b;
+	background-color: #4171B5;
+	color: #FFFFFF;
+	height: 23px;
+}
+
+.inputButton2 {
+	background-image: url(images/button.jpg);
+	width: 64px;
+	height: 25px;
+	border: none;
+}
+
+/* liyu 20090911
+.inputSubmit {
+	border-style: solid;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-top-color: #D9DFEA;
+	border-left-color: #D9DFEA;
+	border-bottom-color: #0e1f5b;
+	border-right-color: #0e1f5b;
+	background-color: #4171B5;
+	color: #FFFFFF;
+	width: 66px;
+	height: 23px;
+}
+*/ /*
+.inputSubmit {
+	-moz-border-radius-topright : 5px;
+	-moz-border-radius-topleft : 5px;
+	-moz-border-radius-bottomright : 5px;
+	-moz-border-radius-bottomleft : 5px;
+	margin:0 5px 3px 3px !important;
+	background-color:#E5EDF9;
+	border-width: 1px;
+	font-size: 100%;
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+	padding:5px 15px 5px 15px;
+	vertical-align:middle;
+
+
+	background-position:10px;
+	background-repeat:no-repeat;
+	padding-left:30px;
+	background-image:url(images/button_accept.gif);
+}*/
+.inputSubmit,.save,.search,.upload,.add,.plus,.cancel {
+	border:0 none;
+	background:#218813;
+	border:1px solid #218813;
+	margin:10px 10px 0 0;
+	height:33px;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+}
+.dd{
+	border:0 none;
+	background:#4F9CDD;
+	border:1px solid #246CA7;
+	margin-left:30px;
+	cursor:pointer;
+	color:#fff;
+	font-weight:bold;
+	padding:3px;
+}
+#device_name{
+	margin-top:15px;	
+	border:1px solid #999;
+	height:25px;
+}
+#title,#image_url{
+	margin-top:15px;
+	border:1px solid #999;	
+}
+.inputSubmit{
+	margin-left:10px;
+	margin-right:10px;
+}
+.simple {
+	border:0 none;
+	cursor:pointer;
+}
+.inputSubmitLong {
+	border-style: solid;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-top-color: #D9DFEA;
+	border-left-color: #D9DFEA;
+	border-bottom-color: #0e1f5b;
+	border-right-color: #0e1f5b;
+	background-color: #4171B5;
+	color: #FFFFFF;
+	width: 106px;
+	height: 23px;
+}
+
+.inputSubmitShort {
+	border-style: solid;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-top-color: #D9DFEA;
+	border-left-color: #D9DFEA;
+	border-bottom-color: #0e1f5b;
+	border-right-color: #0e1f5b;
+	background-color: #E5EDF9;
+	color: #000;
+	width: 30px;
+	height: 23px;
+}
+
+.formLogin {
+	margin-left: 1px;
+	margin-bottom: 1px;
+}
+
+/*
+------------------------------------------------------------------------------
+    Course and Category Style
+------------------------------------------------------------------------------
+*/
+.courseCategory {
+	float: left;
+	width: 40%;
+	margin: 0 0 0px 0;
+}
+
+.courseCategory h3 {
+	border-bottom: 1px solid #666;
+	background: #efefef no-repeat top right;
+	color: #666;
+	padding: 7px 5px 7px 5px;
+	font: bold 1em Tahoma, Arial, Sans-Serif;
+	margin: 0 0 0 0;
+}
+
+.courseList {
+	float: right;
+	width: 55%;
+}
+
+.courseList h3 {
+	border-bottom: 1px solid #666;
+	background: #efefef no-repeat top right;
+	color: #666;
+	padding: 7px 5px 7px 5px;
+	font: bold 1em Tahoma, Arial, Sans-Serif;
+	margin: 0 0 0 0;
+}
+
+.courseSubscribe {
+	background: #fff;
+	float: left;
+	margin-left: 80px;
+	padding-top: 0px;
+	position: relative;
+	width: 70%;
+}
+
+/*
+------------------------------------------------------------------------------
+    Tab Style
+------------------------------------------------------------------------------
+*/
+.tabTable {
+	width: 100%;
+	height: 23px;
+	border-collapse: collapse;
+}
+
+.tabUnSelected {
+	background: #f3f3f3;
+	color: #666;
+	font-weight: bold;
+	text-align: center;
+	border-top: 0px solid #B31000;
+	border-bottom: 5px solid #B31000;
+	border-left: 0px solid #B31000;
+	border-right: 0px solid #B31000;
+}
+
+.tabSelected {
+	background: #B31000;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	border-top: 1px solid #B31000;
+	border-bottom: 5px solid #B31000;
+	border-left: 1px solid #B31000;
+	border-right: 1px solid #B31000;
+}
+.tabSelected  a{
+	color: #fff;
+}
+
+.tabOther {
+	/*border-bottom: 1px solid #666666;*/
+	border-bottom: 5px solid #B31000;
+}
+
+.settingsUI {
+	text-align: left;
+	background-color: #fff;
+	background-image: url(./images/layerPopupBg.gif);
+	border: 2px solid #cccccc;
+}
+
+.settingsTabHeader {
+	background-color: #E5EDF9;
+	line-height: 25px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	padding: 8px;
+}
+
+.settingsIconDisplay {
+	font-family: 微软雅黑, Verdana !important, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	padding: 10px;
+	color: #000000;
+	background-color: #ffffff;
+	padding-left: 10px;
+}
+
+/*
+------------------------------------------------------------------------------
+    Course Program
+------------------------------------------------------------------------------
+*/
+.courseDescription {
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+}
+
+.courseDescriptionIcon {
+	float: left;
+	width: 150px;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.courseDescriptionContent {
+	width:99%;
+}
+.courseDescriptionContent table{
+	border-collapse:collapse;	
+	border:1px solid #ccc;
+}
+.courseDescriptionContent table tr{
+	border:1px solid #ccc;
+	height:30px;	
+}
+.courseDescriptionContent table tr td{
+	text-align:center;
+}
+.courseDescriptionContent table tr td.lefttext{
+	text-align:left;
+	padding:10px;	
+}
+.p-table{
+	width:100%;
+	border:1px solid #ccc;
+	border-collapse:collapse;
+	text-align:center;
+	margin-top:15px;
+}
+.p-table th{
+	border:1px solid #ccc;
+	height:50px;
+	background:url("/lms/themes/images/tablebg.gif") repeat;
+}
+.p-table td{
+	border:1px solid #ccc;
+}
+.searchform{
+	margin-top:10px;	
+}
+.searchform input[type="checkbox"]
+{
+	vertical-align:middle;
+}
+.searchform input[type="submit"]{
+	height:25px;
+	vertical-align:middle;
+	background:linear-gradient(to top, #54A2DE, #53A0E2) repeat scroll 0 0 #4F9CDD;
+	border:1px solid #246CA7;
+}
+/*
+------------------------------------------------------------------------------
+    Course Category Of Admin Module
+------------------------------------------------------------------------------
+*/
+.courseCategoryAdmin {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	float: left;
+}
+
+/*
+------------------------------------------------------------------------------
+    Course Group Space
+------------------------------------------------------------------------------
+*/
+.courseGroupSpace {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+
+/*
+------------------------------------------------------------------------------
+    Course Progress
+------------------------------------------------------------------------------
+*/
+.courseLog {
+	width: 99%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+
+.courseLog td {
+	border-bottom: 1px dotted #e1e1e1;
+	padding-top: 10px;
+}
+
+/*
+------------------------------------------------------------------------------
+    Course Group Space
+------------------------------------------------------------------------------
+*/
+.myCourse {
+	width: 70%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.myCourse td {
+	border-bottom: 1px dotted #e1e1e1;
+	padding-top: 10px;
+}
+
+.myCourse ul { /*list-style-type: none;*/
+
+}
+
+.myCourse ul li {
+	margin-top: 5px;
+}
+
+/*
+------------------------------------------------------------------------------
+   Home Page Course Group Space
+------------------------------------------------------------------------------
+*/
+.homeCategory {
+	width: 35%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.homeCategory ul {
+	margin-top: 5px;
+	/*list-style-type: none;*/
+}
+
+.homeCategory ul li {
+	margin-top: 5px;
+}
+
+.homeCourse {
+	width: 45%;
+	float: left;
+	margin-bottom: 20px;
+	margin-top: 70px;
+}
+
+.homeCourse td {
+	border-bottom: 1px dotted #e1e1e1;
+	padding-top: 5px;
+}
+
+.homeCourse ul li {
+	margin-top: 5px;
+}
+
+.settingsTabHeader {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 15px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 13px;
+	COLOR: #33338c;
+	BORDER-TOP-COLOR: #000000;
+	LINE-HEIGHT: 22px;
+	FONT-FAMILY: Arial;
+	TEXT-ALIGN: left
+}
+
+/*********************************** forms *****************************************/
+	/*label { font-weight: bold; }*/
+.inputText,input[type=file] {
+	border: 1px solid #aaaaaa;
+	padding: 3px;
+	/*padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 0px;*/
+	background: #ffffff url(images/inputBg.gif) top left repeat-x;
+	margin-top: 2px;
+}
+
+/*select {
+  width:200px;
+}*/ /*****************************************************
+ *  BUTTONS	                                         *
+ *****************************************************/ /* BUTTONS */
+.inputSubShort {
+	border-style: solid;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-top-color: #D9DFEA;
+	border-left-color: #D9DFEA;
+	border-bottom-color: #0e1f5b;
+	border-right-color: #0e1f5b;
+	background-color: #4F9CDD;
+	color: #FFF;
+	height: 23px;
+}
+
+/*****************************************************
+ *  BUTTONS	                                         *
+ *****************************************************/ /* actions */
+.actions_lp {
+	background: #F8F8F8;
+	height: 28px;
+	padding-left: 17px;
+	margin: 5px 2px 1px 11px;
+	vertical-align: middle;
+	width: 88%;
+}
+
+.actions_lp img {
+	vertical-align: middle;
+}
+
+.actions_lp a {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.actions_lp span {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.actions_lp form {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.actions {
+	background: #efefef;
+	border-bottom: 1px dotted #4171B5;
+	border-top: 1px dotted #4171B5;
+	padding: 2px;
+	vertical-align: middle;
+	width: 99.5%;
+	margin-top: 5px;
+	overflow:hidden;
+}
+
+.actions img { /*display:inline-block;*/
+	border: none;
+	text-decoration: none;
+	background-color: #efefef;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+.actions a {
+	display: inline-block;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+.actions span {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.actions form {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.onError {
+	background: #FFF2E9 url(../img/onError.gif) no-repeat;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	vertical-align: middle;
+	display: inline;
+}
+
+.onShow {
+	BORDER-BOTTOM: #fff 1px solid;
+	BORDER-LEFT: #fff 1px solid;
+	PADDING-BOTTOM: 4px;
+	LINE-HEIGHT: 20px;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 4px;
+	WORD-WRAP: break-word;
+	WHITE-SPACE: normal;
+	COLOR: #999999;
+	WORD-BREAK: break-all;
+	BORDER-TOP: #fff 1px solid;
+	BORDER-RIGHT: #fff 1px solid;
+	PADDING-TOP: 5px;
+	display: inline;
+	margin-left: 15px;
+	font-style:italic;
+}
+
+.onShow A:link {
+	LINE-HEIGHT: 20px;
+	COLOR: #666;
+	TEXT-DECORATION: none
+}
+
+.onShow A:visited {
+	LINE-HEIGHT: 20px;
+	COLOR: #666;
+	TEXT-DECORATION: none
+}
+
+.onError {
+	BORDER-BOTTOM: #f60 1px solid;
+	BORDER-LEFT: #f60 1px solid;
+	PADDING-BOTTOM: 4px;
+	LINE-HEIGHT: 20px;
+	PADDING-LEFT: 25px;
+	PADDING-RIGHT: 4px;
+	BACKGROUND: url(../img/standard_msg_error.gif) #fff2e9 no-repeat 6px 6px
+		;
+	COLOR: #000;
+	BORDER-TOP: #f60 1px solid;
+	BORDER-RIGHT: #f60 1px solid;
+	PADDING-TOP: 5px;
+	display: inline;
+}
+
+.onError2{
+	BORDER: #f60 1px solid;
+	LINE-HEIGHT: 25px;
+	PADDING-LEFT: 25px;
+	PADDING-RIGHT: 5px;
+	BACKGROUND: url(../img/wrong.gif) #fff2e9 no-repeat 6px 6px;
+	COLOR: #000;
+	PADDING-TOP: 5px;
+	PADDING-BOTTOM: 5px;
+}
+
+.onFocus {
+	BORDER-BOTTOM: #00a8ff 1px solid;
+	BORDER-LEFT: #00a8ff 1px solid;
+	PADDING-BOTTOM: 4px;
+	LINE-HEIGHT: 20px;
+	PADDING-LEFT: 25px;
+	PADDING-RIGHT: 4px;
+	WORD-WRAP: break-word;
+	WHITE-SPACE: normal;
+	BACKGROUND: url(../img/standard_msg_warning.gif) #e2f5ff no-repeat 6px
+		6px;
+	COLOR: #000;
+	WORD-BREAK: break-all;
+	BORDER-TOP: #00a8ff 1px solid;
+	BORDER-RIGHT: #00a8ff 1px solid;
+	PADDING-TOP: 5px;
+	
+}
+
+.onEmpty {
+	BORDER-BOTTOM: #00a8ff 0px solid;
+	BORDER-LEFT: #00a8ff 0px solid;
+	PADDING-BOTTOM: 4px;
+	LINE-HEIGHT: 20px;
+	PADDING-LEFT: 25px;
+	PADDING-RIGHT: 4px;
+	WORD-WRAP: break-word;
+	WHITE-SPACE: normal;
+	BACKGROUND: url(../img/standard_msg_warning.gif) #fff no-repeat 5px 6px;
+	COLOR: #000;
+	WORD-BREAK: break-all;
+	BORDER-TOP: #00a8ff 0px solid;
+	BORDER-RIGHT: #00a8ff 0px solid;
+	PADDING-TOP: 6px;
+	display: inline;
+}
+
+.onSuccess {
+	BORDER: #00be00 1px solid;
+	PADDING-BOTTOM: 4px;
+	LINE-HEIGHT: 20px;
+	PADDING-LEFT: 25px;
+	PADDING-RIGHT: 4px;
+	BACKGROUND: url(../img/icon_ok.gif) #fff no-repeat 6px 6px;
+	COLOR: #000;
+	PADDING-TOP: 5px;
+}
+
+.onLoad {
+	BORDER-BOTTOM: #00be00 1px solid;
+	BORDER-LEFT: #00be00 1px solid;
+	PADDING-BOTTOM: 4px;
+	LINE-HEIGHT: 20px;
+	PADDING-LEFT: 25px;
+	PADDING-RIGHT: 4px;
+	BACKGROUND: url(../img/busy.gif) #e6ffe6 no-repeat 6px 6px;
+	COLOR: #000;
+	BORDER-TOP: #00be00 1px solid;
+	BORDER-RIGHT: #00be00 1px solid;
+	PADDING-TOP: 5px;
+	display: inline;
+}
+
+#append_parent {
+	font-family: Verdana, Arial, Helvetica, Lucida, sans-serif,
+		V Trebuchet MS;
+	font-size: 12px;
+}
+
+.formbtn {
+	width: 60px;
+	height: 21px;
+	color: #234f8d;
+	border: 0;
+	background: url(images/button2.gif);
+}
+
+.progressBar {
+	border: 1px solid #000000;
+	float: left;
+	height: 13px;
+	margin: 2px 2px;
+	width: 96%;
+}
+
+.input_move {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 2px 8px 0pt 3px;
+	height: 18px;
+	line-height: 18px;
+	width: 219px;
+	border: 1px solid #b6b69a;
+	background-color: #FFFFCC;
+}
+
+.input_out {
+	color: #bfbfbf;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	/*height:16px;默认高度*/
+	background: url(../images/sdinput_bg.gif) no-repeat;
+	padding: 2px 8px 0pt 3px;
+	height: 18px;
+	line-height: 18px;
+	width: 219px;
+	border: 1px solid #b6b69a;
+	background-color: #FFF;
+}
+
+.actions_ext{margin:2px 0 6px 0;height:26px}
+.actions_txt{_float:right; padding-top:2px;padding-left:10px;font-weight:bold;color:#666}

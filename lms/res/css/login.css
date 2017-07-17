@@ -1,0 +1,229 @@
+BODY {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: Verdana;
+}
+
+BODY {
+	BACKGROUND: #013d83;
+	MARGIN: 0px;
+	TEXT-ALIGN: center
+}
+
+DIV {
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 160%;
+	FONT-FAMILY: Verdana;
+}
+
+INPUT {
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 160%;
+	FONT-FAMILY: Verdana;
+}
+
+#container1 {
+	BACKGROUND: url(../images/logo/logo_login.gif) #013d83 no-repeat;	
+	MARGIN-TOP: 120px;	
+	PADDING-RIGHT: 1em;
+	PADDING-LEFT: 1em;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	WIDTH: 511px;
+	POSITION: relative;
+	HEIGHT: 316px;
+	TEXT-ALIGN: left
+}
+
+#loginform {
+	PADDING-RIGHT: 16px;
+	PADDING-TOP: 60px;
+	HEIGHT: 100px;
+	TEXT-ALIGN: right;
+}
+
+#usernamediv {
+	PADDING-LEFT: 100px;
+	FONT-WEIGHT: bold
+}
+
+#passworddiv {
+	FONT-WEIGHT: bold
+}
+
+#usernamediv INPUT {
+	BORDER-RIGHT: #59aeff 1px solid;
+	BORDER-TOP: #59aeff 1px solid;
+	BORDER-LEFT: #59aeff 1px solid;
+	BORDER-BOTTOM: #59aeff 1px solid;
+	WIDTH: 150px;
+	HEIGHT: 22px
+}
+
+#passworddiv INPUT {
+	BORDER-RIGHT: #59aeff 1px solid;
+	BORDER-TOP: #59aeff 1px solid;
+	BORDER-LEFT: #59aeff 1px solid;
+	BORDER-BOTTOM: #59aeff 1px solid;
+	WIDTH: 130px;
+	HEIGHT: 22px
+}
+
+#loginbutton INPUT {
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	MARGIN-TOP: 6px;
+	BACKGROUND: url(../images/bk_btn1.gif) no-repeat;
+	PADDING-BOTTOM: 3px;
+	MARGIN-LEFT: 130px;
+	BORDER-LEFT: 0px;
+	WIDTH: 45px;
+	CURSOR: hand;
+	BORDER-BOTTOM: 0px;
+	HEIGHT: 18px
+}
+
+#help {
+	MARGIN-TOP: 6px;
+	RIGHT: 80px;
+	COLOR: #0685ff;
+	POSITION: absolute;
+}
+
+#register {
+	MARGIN-TOP: 6px;
+	RIGHT: 112px;
+	COLOR: #0685ff;
+	POSITION: absolute;
+}
+
+#sysAnno{
+	MARGIN-TOP: 26px;
+	RIGHT: 88px;
+	COLOR: #0685ff;
+	POSITION: absolute;
+}
+
+#lostPwd{
+
+	MARGIN-TOP: 26px;
+	RIGHT: 28px;
+	COLOR: #0685ff;
+	POSITION: absolute;
+}
+
+#comment {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 30px;
+	PADDING-BOTTOM: 20px;
+	COLOR: #FFFFFF;
+	PADDING-TOP: 108px;
+	TEXT-ALIGN: right
+}
+
+#comment0 {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 30px;
+	PADDING-BOTTOM: 20px;
+	COLOR: #FFFFFF;
+	PADDING-TOP: 136px;
+	TEXT-ALIGN: right
+}
+
+#copyright1 {
+	LEFT: 2em;
+	COLOR: #FFFFFF;
+	BOTTOM: 7px;
+	FONT-FAMILY: Verdana;
+    POSITION :   absolute;
+	TEXT-ALIGN: left
+}
+
+.copyright2 {
+	FONT-FAMILY: Verdana;
+}
+
+
+#product {
+	MARGIN: 0px
+}
+
+#product SPAN {
+	VISIBILITY: hidden
+}
+
+#container1 A {
+	COLOR: #0685ff;
+	TEXT-DECORATION: none
+}
+
+A:visited {
+	COLOR: #0685ff;
+	TEXT-DECORATION: underline
+}
+
+#container1 A:hover {
+	COLOR: #ff8c00;
+	TEXT-DECORATION: underline
+}
+
+#language A {
+	COLOR: #e3effb;
+	TEXT-DECORATION: none
+}
+
+#language A:visited {
+	COLOR: #e3effb;
+	TEXT-DECORATION: none
+}
+
+#language A:hover {
+	COLOR: #ff8c00;
+	TEXT-DECORATION: underline
+}
+
+#version {
+	FONT-WEIGHT: bold;
+	LEFT: 236px;
+	COLOR: #c0def8;
+	FONT-STYLE: italic;
+	POSITION: absolute;
+	TOP: 12px
+}
+
+#driver {
+	RIGHT: 70px;
+	POSITION: absolute;
+	TOP: 220px
+}
+
+#language {
+	RIGHT: 1em;
+	COLOR: #d8e6f7;
+	BOTTOM: 0.8em;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	POSITION: absolute;
+	TEXT-ALIGN: right
+}
+
+HR {
+	BORDER-TOP: #bbdeff 1px dotted;
+	WIDTH: 220px;
+	HEIGHT: 1px
+}
+
+#errorMsg {
+	color: red;
+	position: absolute;
+	top: 180px;
+	right: 30px;
+	font-size:11px;
+}
+
+#tip{	
+	COLOR: #d8e6f7;	
+	FONT-FAMILY: Verdana;
+	TEXT-ALIGN: left;
+	BOTTOM: 0.8em;
+	RIGHT: 5px;
+    POSITION :   absolute;	
+}

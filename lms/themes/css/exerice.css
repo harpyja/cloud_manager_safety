@@ -1,0 +1,161 @@
+.all{
+width:96%;
+height:auto;
+/*padding-left:2%;*/
+ margin:20px 3% 0;
+  overflow: hidden;
+/*  border:1px solid red;*/
+}
+.all-inner{
+  width:99%;
+  padding:0 5px;
+  min-height:10px;
+}
+.row-fluid{
+  width:98%;
+/*  border:1px solid red;*/
+}
+.row-fluid:after{
+   display: table;
+content: "";
+    clear:both;
+}
+.span2{
+    width:15.82%;
+   /*  padding:7px 0px;  */
+   border:1px solid #CACACA;
+   border-radius:6px;
+/*   margin-left:11px;*/
+    margin-left:0.81%;
+   float:left;
+   height:150px;
+}
+
+.user-top{
+  width:100%;
+  text-indent:2em;
+  color:#000;
+  font-size:14px;
+  /*  padding:15px 0px;  */
+   height:45px; 
+  background:#F1F1F1;
+  border-bottom:1px solid #CACACA;
+  line-height:45px;
+ position:relative;
+}
+.user-list{
+  display:inline-block;
+  width:15px;
+  height:15px;
+  background:url("../../themes/images/user-list.png") no-repeat; 
+   position:absolute;
+   top:13px;
+   left:6px;
+}
+.user-cpu-title{
+  background-position:-120px 2px;
+}
+.user-neicun-title{
+   background-position:-215px 2px;
+}
+.user-xuni-title{
+    background-position:-72px -21px;
+}
+.user-cipan1-title{
+   background-position:-47px -22px;
+}
+.user-cipan2-title{
+     background-position:0px -70px;
+}
+.user-zaixian-title{
+   background-position:-167px 2px;
+}
+.user-img{
+   width:100%;
+   position:relative;
+}
+.user-img img{
+/* margin-left:35px;
+  margin-top:9px;*/
+ margin-left:13%;
+  margin-top:5%;
+  width:72%;
+    
+}
+.user-font{
+   display:block;
+   height:30px;
+   width:30px;
+   color:#fff;
+   font-size:2em;
+   
+}
+.user-img .user-font{
+    position:absolute;
+   top:2%;
+   left:0px;
+   width:100%;
+   height:100%;
+    text-align:center;
+    line-height:100px; 
+    
+}
+.user-font a{
+   text-decoration:none;
+   color:white;
+}
+/*.user-cpu{
+  position:absolute;
+   top:6px;
+   left:0px;
+   width:100%;
+   height:100%;
+    text-align:center;
+    line-height:100px; 
+}
+.user-neicun{
+  position:absolute;
+   top:6px;
+   left:0px;
+   width:100%;
+   height:100%;
+    text-align:center;
+    line-height:100px;
+}
+.user-xuni{
+   position:absolute;
+   top:0px;
+   left:0px;
+   width:100%;
+   height:100%;
+    text-align:center;
+    line-height:100px;
+}
+
+.user-cipan1{
+   position:absolute;
+   top:0px;
+   left:0px;
+   width:100%;
+   height:100%;
+    text-align:center;
+    line-height:100px;
+}
+.user-cipan2{
+   position:absolute;
+   top:0px;
+   left:0px;
+   width:100%;
+   height:100%;
+    text-align:center;
+    line-height:100px;
+}
+.user-zaixian{
+ position:absolute;
+   top:0px;
+   left:0px;
+   width:100%;
+   height:100%;
+    text-align:center;
+    line-height:100px;
+}*/

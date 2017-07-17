@@ -1,0 +1,105 @@
+*{
+   margin:0;
+   padding:0;
+}
+textarea{
+   border:1px solid #000;
+}
+input{
+  color:#fff;
+}
+.m-moclist .m-samewrap{
+   width:100%;
+   border-right:1px solid #ccc;
+}
+.m-moclist .lab-goal{
+  width:100%;
+  height:100%;
+}
+.m-moclist .lab-goal .lab-goal-title{
+   line-height:45px;
+      background:#F7F7F7;
+	 border:1px dotted #ccc; 
+	 border-left:0;
+	 border-right:0;
+}
+.lab-goal-title:after{
+    display:block;
+	clear:both;
+	content:"";
+}
+.m-moclist .lab-goal .lab-left{
+   width:15%;
+   margin:0;
+   float:left;
+   z-index:100;
+   text-align:right;
+}
+.m-moclist .lab-goal .lab-right{
+   background:#fff;
+   margin:0;
+   width:84.8%;  
+   height:100%;
+   float:right;
+   position:relative;
+   border-left:1px dotted #ccc;
+
+}
+.m-moclist .lab-f16{
+    font-size:14px;
+ padding:12px 5px;
+ float:left;
+}
+.lab-right .lab-add-btn{
+    padding:0 20px;
+    background:#FF9326;
+    border:1px solid #FFD24D;
+    float:right;
+    border-radius:6px;
+    margin-top:7px;
+    margin-right:70px;
+    height:30px;
+
+}
+.lab-right .lab-add-btn a{
+        color:#fff;
+        line-height:30px;
+}
+.lab-right .prement-course{
+   margin-right:30px;
+   float:right;
+}
+.m-moclist .lab-goal .lab-goal-con{
+   height:100%;
+   background:#F7F7F7;
+}
+.lab-goal-con:after{
+    display:block;
+	clear:both;
+     content:"";
+}
+.m-moclist .lab-goal .lab-con-right textarea{
+          margin:5px;
+	 min-height:150px;
+	 min-width:500px;
+}
+
+
+.m-moclist .lab-goal .lab-con-right input:hover{
+    background: #3C8440;
+     border-color: #3C8440;
+}
+.no-step{
+   display:block;
+   padding:20px;
+}
+.j-top .lab-return{
+    background:url("../images/lab-return.png") repeat-x;
+    color:#666;
+    border:1px solid #ccc;
+}
+.j-top .lab-return:hover{
+    background:url("../images/btn_submit.png") repeat-x;
+    color:#FFF;
+    border:1px solid #3C8440;
+}

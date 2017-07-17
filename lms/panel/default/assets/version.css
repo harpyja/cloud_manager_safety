@@ -1,0 +1,35 @@
+BODY {
+	FONT-FAMILY: ËÎÌו;
+	BACKGROUND: #f2fafd;
+	FONT-SIZE: 12px
+}
+
+UL {
+	LIST-STYLE-TYPE: none;
+	/*WIDTH: 100%*/
+}
+
+LI {
+	PADDING-BOTTOM: 5px
+}
+
+#VersionHead {
+	PADDING-LEFT: 20px;
+	WIDTH: 100%;
+	BACKGROUND: url(images/version_bg.gif) no-repeat;
+	HEIGHT: 76px;
+	PADDING-TOP: 20px
+}
+
+#VersionNum {
+	BORDER-BOTTOM: #ffffff 1px solid;
+	TEXT-ALIGN: center;
+	WIDTH: 100%;
+	FONT-FAMILY: Arial;
+	BACKGROUND: #bddbf1;
+	HEIGHT: 25px;
+	COLOR: #000000;
+	FONT-SIZE: 13px;
+	BORDER-TOP: #003286 3px solid;
+	PADDING-TOP: 5px
+}

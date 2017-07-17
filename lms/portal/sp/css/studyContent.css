@@ -1,0 +1,16 @@
+@import url("publicStyle.css");
+/*
+*   模块名：课程文章查看页面样式
+*   author: Jesse Yu
+*   update: 2013/1/26
+*/
+.top{height:80px;background:#3190CB;position:fixed;top:0;left:0; width:100%; z-index:1; border-bottom:2px solid #053B5D;}
+	.f1,.f2{height:80px;line-height:80px;padding:0 30px;}
+	.f1{float:left;}
+		.f1 a{ display:block;width:103px;height:31px;color:#FFF;font-weight:bold; font-weight:2em;text-align:center;line-height:30px; background:url("../images/regbutton.gif") no-repeat;margin-top:23px; cursor:pointer;}
+	.f2{float:right;font-weight:bold;font-size:1.2em;color:#fff;}
+	.study-time{margin-right:20px;}
+	.study-time input{border:1px solid #054367;height:30px;width:100px; text-align:center;font-weight:bold;}
+.Study-content{ position:relative; top:80px;}
+	.Study-content iframe{width:100%;hegiht:100%;}
+	

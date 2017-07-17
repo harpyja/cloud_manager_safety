@@ -1,0 +1,1 @@
+a:15:{s:2:"id";s:2:"52";s:8:"category";s:9:"客户端";s:4:"name";s:9:"windowsxp";s:7:"version";s:14:"windowsxp_base";s:4:"size";s:4:"4096";s:6:"memory";s:4:"1024";s:10:"CPU_number";s:1:"1";s:8:"NIC_type";s:1:"1";s:4:"type";s:1:"1";s:8:"platform";s:1:"2";s:4:"vlan";s:0:"";s:6:"active";s:1:"0";s:6:"nodeId";s:0:"";s:3:"ISO";s:13:"windowsxp.iso";s:4:"boot";s:1:"0";}

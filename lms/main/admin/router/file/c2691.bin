@@ -1,0 +1,57 @@
+# /etc/sudoers
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# See the man page for details on how to write a sudoers file.
+#
+
+#Defaults requiretty 	
+Defaults visiblepw 
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL) ALL
+www-data  ALL=(ALL) NOPASSWD: /usr/bin/sudo    
+www-data  ALL=(ALL) NOPASSWD: /bin/rm    
+www-data  ALL=(ALL) NOPASSWD: /bin/tar
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudadmin.sh    
+www-data  ALL=(ALL) NOPASSWD: /sbin/clouddhcp.sh     
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudlab.sh      
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudlicense     
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudupdate.sh   
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudvmstart.sh  
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudvmstop.sh  
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudimgstart.sh  
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudvmweb.sh
+www-data  ALL=(ALL) NOPASSWD: /usr/sbin/qm
+www-data  ALL=(ALL) NOPASSWD: /usr/bin/qemu-img
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudimg.sh 
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudimgstart.sh 
+www-data  ALL=(ALL) NOPASSWD: /usr/bin/ssh
+www-data  ALL=(ALL) NOPASSWD: /bin/cp
+www-data  ALL=(ALL) NOPASSWD: /usr/bin/unoconv
+www-data  ALL=(ALL) NOPASSWD: /usr/local/bin/pdf2swf
+www-data  ALL=(ALL) NOPASSWD: /sbin/clouddoc.sh
+www-data  ALL=(ALL) NOPASSWD: /sbin/test.sh
+www-data  ALL=(ALL) NOPASSWD: /tmp/update/update.sh
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudrsync.sh
+www-data  ALL=(ALL) NOPASSWD: /usr/bin/rsync
+www-data  ALL=(ALL) NOPASSWD: /usr/bin/touch
+www-data  ALL=(ALL) NOPASSWD: /usr/bin/openssl
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudenc.sh
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudconfigip.sh
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudconfigdhcp.sh
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudconfigreboot.sh
+www-data  ALL=(ALL) NOPASSWD: /sbin/cloudscanning.sh 
+www-data  ALL=(ALL) NOPASSWD: /sbin/clouddesktopadd.sh
+
+# Allow members of group sudo to execute any command
+# (Note that later entries overide this, so you might need to move
+# it further down)
+%sudo ALL=(ALL) ALL
+#
+#includedir /etc/sudoers.d

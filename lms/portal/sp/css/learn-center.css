@@ -1,0 +1,429 @@
+body{
+   min-width:1000px;
+   font-size:14px;
+}
+.m-cbg{
+  position:fixed;
+  top:0;
+  right:0;
+  left:250px;
+  bottom:0;
+  background-color:#fff;
+  z-index:-1;
+  -webkit-box-shadow:-1px 0px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow:-1px 0px 2px rgba(0, 0, 0, 0.1);
+  box-shadow:-1px 0px 2px rgba(0, 0, 0, 0.1);
+}
+.m-learnhead{
+    background-color:#f8f8f8;
+	border:1px solid #ddd;
+	padding:10px 0;
+}
+.schoolImg{
+   padding-left:110px;
+   display:block;
+   font-size:16px;
+   font-weight:bold;
+}
+.m-learnhead .info1{
+   margin-left:70px;
+   padding-left:40px;
+   border-left:1px solid #ccc;
+}
+.m-learnhead a{
+  display:block;
+}
+.m-learnhead .info1 .courseTxt{
+   font-weight:bold;
+}
+.g-wrap{
+  width:100%;
+}
+/* .g-wrap:after{
+   clear:both;
+   display:block;
+   content:"";
+} */
+.m-learnleft{
+   padding:20px 0;
+}
+.m-learnleft .top{
+   padding-left:10px;
+}
+.m-learnleft .top img{
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+}
+img{
+   vertical-align:center;
+}
+.m-learnleft .tab{
+   width:230px;
+   padding:0;
+   margin:10px;
+}
+.m-learnleft .tab li{
+   margin-bottom:0px;
+}
+.u-tabul .u-greentab{
+   /*  margin-bottom:2px; */
+}
+.m-learnleft .tab li.first a{
+   border-top:none;
+}
+ .m-learnleft .tab li a{
+   height:50px;
+   line-height:50px;
+   border-bottom:1px solid #f0f0f0;
+} 
+
+.u-tabul .u-greentab a{
+   display:block;
+   font-size:16px;
+   padding-left:12px;
+   background-color:#fff;
+  /*  line-height:40px;   */
+}
+
+.u-tabul .u-greentab a:hover{
+   background:#f8f8f8;
+   color:#61a500;
+}
+ .u-tabul .u-curtab a,.u-tabul .u-curtab a:hover{
+   color:#fff;
+   background-color:#13a654;
+} 
+.m-coulshar{
+   width:210px;
+   margin:10px;
+   padding:20px 10px;
+   font-size:16px;
+   height:33px;
+   line-height:33px;
+}
+.f-bg{
+   background-color:#fff;
+   -webkit-box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);
+   box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.m-coulshar .u-share{
+  margin-left:5px;
+}
+
+.u-share .solo{
+   background:url("../images/shareUI.png") no-repeat;
+   width:32px;
+   height:33px;
+   font-size:20px;
+   margin:0 10px;
+   display:block;
+}
+.u-share .sina{
+   background-position:-52px 0px;
+}
+.u-share .renren{
+   background-position:-104px 0px;
+} 
+.u-share .sina:hover{
+   background-position:-52px -47px;
+}
+.u-share .qzone:hover{
+   background-position:0px -47px;
+}
+.u-share .renren:hover{
+   background-position:-104px -47px;
+}
+
+.m-learnbox{
+  padding:20px 40px;
+}
+.u-learn-moduletitle{
+   padding:10px 0;
+   margin-bottom:20px;
+   border-bottom:1px solid #eee;
+}
+.m-learnChapterNormal{
+   /*  margin-bottom:10px; */
+}
+.m-learnChapterNormal .titleBox{
+  background:#e8f9ff;
+  padding:8px 15px;
+  cursor:pointer;
+}
+.m-learnChapterNormal .titleBox:hover{
+   background:#D2EFF7;
+}
+/* .cpicon{
+  height:24px;
+  font-size:14px;
+  color:#666;
+  width:30px;
+  background:url("../images/course-intro.png") no-repeat;
+}
+.j-up{
+    background-position:-120px -2px;
+}
+.j-down{
+    background-position:-148px 0px;
+} */
+
+
+.f-icon{
+   font-family: 'icomoon';
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.m-learnChapterNormal .titleBox .name{
+   max-width:80%;
+}
+.m-learnChapterNormal .line{
+    width:0px;
+	height:0px;
+	border-left:1px solid #eee;
+	top:70px;
+	left:20px;
+}
+.u-line30{
+   line-height:30px;
+}
+.u-learnLesson:hover{
+    background:#F8F8F8;
+	color:#13A654;
+}
+/* .u-learnLesson.last{
+  border-bottom:1px dashed #fff;
+  margin-bottom:-10px;
+} */
+.u-learnLesson{
+   padding:20px 15px 20px 40px;
+   cursor:pointer;
+  
+}
+.u-learn-center{
+   margin-left:50px;
+}
+.u-learn-2{
+   padding:15px 15px 15px 40px; 
+}
+.u-lesson-bor{
+    border-bottom:1px dashed #E7E9EF;
+}
+.u-learnLesson.normal .name{
+    max-width:85%;
+}
+.m-notice .left-mn{
+  width:100%;
+  float:left;
+}
+.m-notice .left-mnc{
+   margin-right:270px;
+}
+.u-learn-moduletitle{
+    padding:10px;
+	margin-bottom:20px;
+	border-bottom:1px solid #eee;
+}
+/* .m-publishNotice:after{
+   
+} */
+.m-learnbox .empty{
+  margin:0;
+  padding-top:40px;
+  text-align:left;
+  background:url("../images/course-intro.png") no-repeat;
+  background-position:-170px 29px;
+  } 
+.empty:after{
+   display:block;
+   clear:both;
+   content:"";
+}
+.m-learnbox .empty span{
+   line-height:25px;
+   color:#999;
+   font-size:16px;
+   margin-left:50px;
+   margin-bottom:20px;
+}
+.m-notice .noticeitem{
+    padding:20px;
+	border-bottom:1px solid #eee;
+	font-size:14px;
+}
+.m-notice .noticeitem .detailtitlpage .detailtit{
+  font-size:18px;
+  margin-bottom:10px;
+}
+.m-notice .noticeitem .detailcntout{
+  margin-top:15px; 
+   word-break:break-all;
+}
+.f-richEditorText{
+   margin:0;
+   padding:0;
+   border:0;
+   text-align:left;
+   color:#666;
+  line-height:22px;
+   word-wrap:break-word;
+ /*   white-space:pre-wrap; */
+}
+.f-richEditorText p{
+   margin:0;
+   padding:0;
+}
+
+.m-notice .right-sd{
+   position:relative;
+   float:right;
+   width:240px;
+   margin-left:-240px;
+}
+.m-notice .m-dynamic{
+   width:240px;
+   margin-top:15px;
+}
+.m-notice .m-recent{
+   border:1px solid #ccc;
+   background:#f8f8f8;
+}
+.m-notice .m-dynamic .m-dynamicInfo .tit{
+   height:40px;
+   line-height:40px;
+   padding-left:12px;
+}
+.m-notice .m-dynamic .m-dynamicInfo .infos{
+   padding:0 12px 5px;
+}
+.m-notice .m-dynamic .m-dynamicInfo .infos .rlinfo{
+   padding:6px 0 5px 0;
+}
+.m-notice .m-dynamic .m-dynamicInfo .infos .rlinfo .type{
+   font-size:14px;
+}
+.m-notice .m-dynamic .m-dynamicInfo .infos .rlinfo a{
+   display:block;
+   font-size:14px;
+   line-height:26px;
+   height:26px;
+   color:#61a500;
+}
+
+.u-learn-modulewidth{
+  width:720px;
+}
+.u-learn-moduletitle{
+   padding:10px 0;
+   margin-bottom:20px;
+   border-bottom:1px solid #eee;
+}
+.m-chapterQuizHwItem{
+  margin-bottom:30px;
+}
+.m-chapterQuizHwItem .qhTit{
+  margin-bottom:10px;
+}
+.u-quizHwListItem.last{
+  border-bottom:1px solid #f8f8f8;
+}
+.u-quizHwListItem{
+   border-bottom:1px solid #E7E9EF;
+   cursor:pointer;
+}
+.u-quizHwListItem .titleBox{
+   padding:10px 20px;
+   background-color:#f8f8f8;
+}
+/* .u-quizHwListItem .titleBox .qhicon{
+   margin-top:6px;
+} */
+.qhicon{
+  height:40px;
+  width:20px;
+    background:url("../images/course-intro.png") no-repeat;
+}
+.titleBox .j-up{
+   background-position:-120px 4px;
+}
+.titleBox .j-down{
+   background-position:-148px 5px;
+}
+.u-quizHwListItem .titleBox .name{
+  max-width:50%;
+}
+.u-quizHwListItem .titleBox .qhicon, .u-quizHwListItem .titleBox .name, .u-quizHwListItem .titleBox .score{
+   line-height:40px;
+    margin-right:10px; 
+}
+.u-quizHwListItem .titleBox .score{
+   color:#999;
+   margin:0 7px;
+   line-height:38px;
+}
+.titleBox .u-btn{
+  display:inline-block;
+  padding:4px 8px;
+  font-size:14px;
+  line-height:28px;
+  color:#fff;
+  text-align:center;
+  vertical-align:middle;
+  cursor:pointer;
+  min-width:80px;
+  border:1px solid #999;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  -webkit-box-shadow:inset 0 1px 0 rgba(255,255,0.2),0 1px 2px rgba(0,0,0.05);
+  -moz-box-shadow:inset 0 1px 0 rgba(255,255,0.2),0 1px 2px rgba(0,0,0.05);
+  box-shadow:inset 0 1px 0 rgba(255,255,0.2),0 1px 2px rgba(0,0,0.05);
+
+}
+.titleBox .u-btn-default{
+   background:#84b700;
+   
+}
+.titleBox .u-btn-default:hover{
+   background:#a2c917;
+}
+
+ .u-quizHwListItem.down .detail{
+  display:block;
+} 
+.u-quizHwListItem .detail{
+   padding:20px 20px 0 20px;
+   cursor:default;
+   display:none;
+/*    border:1px solid red; */
+}
+.u-quizHwInfoItem{
+   padding-left:20px;
+}
+.u-quizHwInfoItem .infoItem{
+   margin-bottom:20px;
+   word-break:break-word;
+   word-wrap:break-word;
+}
+.u-quizHwInfoItem .infoItem .ntit{
+  padding:1px 8px;
+  margin-right:10px;
+}
+.u-quizHwInfoItem .infoItem .right0.right1{
+   margin-left:15px;
+}
+.u-quizHwInfoItem .infoItem.current{
+   color:#FF9200;
+}
+.u-quizHwInfoItem .infoItem.current .ntit{
+   background:#FF9200;
+   color:#fff;
+}
